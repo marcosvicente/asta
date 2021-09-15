@@ -7,22 +7,20 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 
 require 'faker'
-10.times
-  user = User.new(
-    email: 'marcos@email.com', 
-    password: '123456789', 
-    password_confirmation: '123456789',
-    kind: 1
-  )
-  user.skip_confirmation!
-  user.save!
-end
-10.times
+
+user = User.new(
+  email: 'marcos@email.com', 
+  password: '123456789', 
+  password_confirmation: '123456789',
+  kind: 1
+)
+user.save!
+
+10.times do
   user = User.new(
     email: Faker::Internet.email, 
     password: '123456789', 
     password_confirmation: '123456789'
   )
-  user.skip_confirmation!
   user.save!
 end

@@ -1,0 +1,36 @@
+<h1>New</h1>
+
+<%= form_with model: @user, url: app_users_url do |f| %>
+<% if @user.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@user.errors.count, "error") %> prohibited this user from being saved:</h2>
+
+      <ul>
+        <% @user.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+    <p>
+    <%= f.label 'email' %><br>
+    <%= f.text_field :email %>
+    </p>
+    <p>
+    <%= f.label 'password' %><br>
+    <%= f.password_field :password %>
+    </p>
+    <p>
+    <%= f.label 'password_confirmation' %><br>
+    <%= f.password_field :password_confirmation %>
+    </p>
+    <p>
+    <%= f.submit 'Sign Up' %>
+    </p>
+
+<% end %>
+
+
+
+
+<%= link_to 'Back', app_users_path %>

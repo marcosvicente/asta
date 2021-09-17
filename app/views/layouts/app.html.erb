@@ -21,11 +21,8 @@
 
 </head>
   </head>
-  <p class="notice"><%= notice %></p>
-  <p class="alert"><%= alert %></p>
 
   <body>
-  <!DOCTYPE html>
     <!-- BEGIN: Header-->
     <nav class="header-navbar navbar navbar-expand-lg align-items-center floating-nav jnavbar-static navbar-light navbar-shadow container-xxl">
         <div class="navbar-container d-flex content">
@@ -277,7 +274,7 @@
         <div class="shadow-bottom"></div>
         <div class="main-menu-content">
             <ul class="navigation navigation-main" id="main-menu-navigation" data-menu="menu-navigation">
-                <li class=" nav-item"><a class="d-flex align-items-center" ><i data-feather="import"></i><span class="menu-title text-truncate" data-i18n="Dashboards">Imports</span></a>
+                <li class=" nav-item"><a class="d-flex align-items-center" ><i data-feather="import"></i><span class="menu-title text-truncate" >Imports</span></a>
                     <ul class="menu-content">
                         <li>
                         <%= link_to(imports_path, class: "d-flex align-items-center")  do %>
@@ -292,8 +289,9 @@
                         </li>
                     </ul>
                 </li>
+                <div class="divider"></div>
                 <% if current_user.kind != :admin %>
-                <li class=" nav-item"><a class="d-flex align-items-center" ><i data-feather="user"></i><span class="menu-title text-truncate" data-i18n="Dashboards">User</span></a>
+                <li class=" nav-item"><a class="d-flex align-items-center" ><i data-feather="user"></i><span class="menu-title text-truncate">User</span></a>
                     <ul class="menu-content">
                      <li>
                          <%= link_to(app_users_path, class: "d-flex align-items-center")  do %>
@@ -345,6 +343,7 @@
     <button class="btn btn-primary btn-icon scroll-top" type="button"><i data-feather="arrow-up"></i></button>
     <!-- END: Footer-->
   
+  <script src="https://unpkg.com/feather-icons"></script>
 
    
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>

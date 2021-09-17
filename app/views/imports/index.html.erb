@@ -2,32 +2,38 @@
 
 <h1>Imports</h1>
 
-<table>
-  <thead>
-    <tr>
-      <th>Status</th>
-      <th>File</th>
-      <th>User</th>
-      <th>Name</th>
-      <th colspan="3"></th>
-    </tr>
-  </thead>
-
-  <tbody>
-    <% @imports.each do |import| %>
+<div class="table-responsive">
+  <table class="table">
+    <thead>
       <tr>
-        <td><%= import.status %></td>
-        <td><%= import.file %></td>
-        <td><%= import.user_id %></td>
-        <td><%= import.name %></td>
-        <td><%= link_to 'Show', import %></td>
-        <td><%= link_to 'Edit', edit_import_path(import) %></td>
-        <td><%= link_to 'Destroy', import, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <th>Status</th>
+        <th>File</th>
+        <th>User</th>
+        <th>Name</th>
+        <th colspan="3"></th>
       </tr>
-    <% end %>
-  </tbody>
-</table>
+    </thead>
 
-<br>
+    <tbody>
+      <% @imports.each do |import| %>
+       <tr class="table-active">
+       <td><%= import.name %></td>
+          <td>
+          <span class="badge rounded-pill badge-light-primary me-1">
+                <%= import.status %>
+              </span>
+          </td>
+          <td><%= import.file %></td>
+          <td><%= import.user.email %></td>
+         
+          <td><%= link_to 'Show', import %></td>
+          <td><%= link_to 'Edit', edit_import_path(import) %></td>
+          <td><%= link_to 'Destroy', import, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        </tr>
+      <% end %>
+    </tbody>
+  </table>
+</div>
 
-<%= link_to 'New Import', new_import_path %>
+
+<%= link_to 'New Import', new_import_path, class:"btn btn-primary waves-effect waves-float waves-light" %>

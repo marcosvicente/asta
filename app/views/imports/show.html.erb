@@ -5,20 +5,24 @@
       <div class="card">
         <div class="card-body">
          <p>
-            <strong>Name:</strong>
+            <strong>
+              <%= I18n.t('activerecord.attributes.import.name') %>:
+            </strong>
             <%= @import.name %>
           </p>
           <p>
-            <strong>Status:</strong>
+            <strong>
+              <%= I18n.t('activerecord.attributes.import.status') %>:
+            </strong>
             <%= @import.human_status %>
           </p>
           <p>
-            <strong>User:</strong>
+            <strong>
+              <%= I18n.t('activerecord.attributes.import.user') %>: 
+            </strong>
             <%= @import.user.email %>
           </p>
-          <%= link_to 'Edit', edit_import_path(@import) %> |
-          <%= link_to 'Back', imports_path %>
-         
+          <%= link_to I18n.t('views.edit') , edit_import_path(@import), class:"btn btn-primary w-50" %> 
         </div>
       </div>
     

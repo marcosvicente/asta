@@ -38,3 +38,4 @@ yarn-debug.log*
 
 #import 
 public/uploads/import/file/*
+public/uploads/tmp/*

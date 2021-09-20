@@ -1,5 +1,5 @@
 pt-BR:
-  welcome: "Bem vindo!"
+  welcome: "Bem vindo ao"
   show_visualization_btn: "Ver todos os continentes"
   activerecord:
     models:
@@ -69,11 +69,12 @@ pt-BR:
     edit: Editar
     show: Ver
     destroy: Deletar
+    save: Salvar
     back: Voltar
     action: Ações
     change_language: Mudar a lingua
     profile: Perfil
-    logout: Logout
+    logout: Sair
     import: 
       lasted: Ultimas Importações
       not: Sem Importações
@@ -83,6 +84,13 @@ pt-BR:
       previous: "&lsaquo; Anterior"
       next: "Próxima &rsaquo;"
       truncate: "&hellip;"
+    devise:
+      registration:
+        message: Por favor faça login em sua conta e comece a aventura
+      password:
+        title: Esqueceu a senha? 
+        message: Entre com seu email e enviaremos instruções para resetar sua senha
+        link: Voltar para o login
   helpers:
     page_entries_info:
       one_page:

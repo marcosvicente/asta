@@ -34,10 +34,13 @@ gem 'faker', :git => 'https://github.com/stympy/faker.git', :branch => 'master'
 gem 'pry-rails', :group => :development
 # Devise is a flexible authentication solution for Rails based on Warden. It:
 gem 'devise'
+gem 'devise-i18n'
+
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.4.4', require: false
 
 gem 'bootstrap', '>= 5.0.2'
+gem 'rails-i18n', '~> 6.0.0' # For 6.0.0 or higher
 
 gem 'sprockets', '~> 4'
 gem 'sprockets-rails', :require => 'sprockets/railtie'

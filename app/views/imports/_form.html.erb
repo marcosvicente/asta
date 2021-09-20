@@ -40,7 +40,9 @@
                   </div>
                   <div class="col-sm-12 col-12">
                     <div class="field mb-2">
-                      <%= form.button :submit, value:"Log in", class:"btn btn-primary w-100", tabindex:"4" %>
+                      <%= form.button :submit, class:"btn btn-primary w-50", tabindex:"4" do %>
+                      <%=  I18n.t('views.save')%>
+                      <% end %>
                     </div>
                   </div>
               <% end %>

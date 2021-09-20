@@ -1,5 +1,5 @@
 en:
-  welcome: Welcome!
+  welcome: Welcome to 
   show_visualization_btn: Show all continents
   activerecord:
     models:
@@ -28,29 +28,29 @@ en:
         kinds:
           commom: Commom
           admin: Administrator
-        confirmation_sent_at: Confirmação enviada em
-        confirmation_token: Token de confirmação
-        confirmed_at: Confirmado em
-        created_at: Criado em
-        current_password: Senha atual
-        current_sign_in_at: Atualmente logado em
-        current_sign_in_ip: IP do acesso atual
-        email: E-mail
-        encrypted_password: Senha criptografada
-        failed_attempts: Tentativas sem sucesso
-        last_sign_in_at: Último acesso em
-        last_sign_in_ip: Último IP de acesso
-        locked_at: Bloqueado em
-        password: Senha
-        password_confirmation: Confirme sua senha
-        remember_created_at: Lembrar criado em
-        remember_me: Lembre-se de mim
-        reset_password_sent_at: Resetar senha enviado em
-        reset_password_token: Resetar token de senha
-        sign_in_count: Contagem de acessos
-        unconfirmed_email: E-mail não confirmado
-        unlock_token: Token de desbloqueio
-        updated_at: Atualizado em
+        confirmation_sent_at: Confirmation sent at
+        confirmation_token: Confirmation token
+        confirmed_at: Confirmed at
+        created_at: Created at
+        current_password: Current password
+        current_sign_in_at: Current sign in at
+        current_sign_in_ip: Current sign in IP
+        email: Email
+        encrypted_password: Encrypted password
+        failed_attempts: Failed attempts
+        last_sign_in_at: Last sign in at
+        last_sign_in_ip: Last sign in IP
+        locked_at: Locked at
+        password: Password
+        password_confirmation: Password confirmation
+        remember_created_at: Remember created at
+        remember_me: Remember me
+        reset_password_sent_at: Reset password sent at
+        reset_password_token: Reset password token
+        sign_in_count: Sign in count
+        unconfirmed_email: Unconfirmed email
+        unlock_token: Unlock token
+        updated_at: Updated at
     errors:
       models:
         user:
@@ -84,6 +84,13 @@ en:
       previous: "&lsaquo; Prev"
       next: "Next &rsaquo;"
       truncate: "&hellip;"
+    devise:
+      registration:
+        message: Please sign-in to your account and start the adventure
+      password:
+        title: Forgot Password? 
+        message: Enter your email and we'll send you instructions to reset your password
+        link: Back to login
   helpers:
     page_entries_info:
       one_page:

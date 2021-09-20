@@ -44,7 +44,12 @@
                   </span>
               <% end %>
               </td>
-            <td><%= link_to I18n.t('views.edit'), edit_app_user_path(user) %></td>
+            <td>
+              <%= link_to I18n.t('views.show'), app_user_path(user) %>
+            </td>
+            <td>
+              <%= link_to I18n.t('views.edit'), edit_app_user_path(user) %>
+            </td>
           </tr>
         <% end %>
       </tbody>

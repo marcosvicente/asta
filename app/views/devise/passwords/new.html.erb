@@ -1,16 +1,57 @@
-<h2>Forgot your password?</h2>
+<body class="vertical-layout vertical-menu-modern blank-page navbar-floating footer-static  " data-open="click" data-menu="vertical-menu-modern" data-col="blank-page">
+    <!-- BEGIN: Content-->
+    <div class="app-content content ">
+        <div class="content-overlay"></div>
+        <div class="header-navbar-shadow"></div>
+        <div class="content-wrapper">
+            <div class="content-header row">
+            </div>
+            <div class="content-body">
+                <div class="auth-wrapper auth-v2">
+                    <div class="auth-inner row m-0">
+                        <!-- Brand logo-->
+                        <a class="brand-logo">
+                            <h2 class="brand-text text-primary ms-1">Asta</h2>
+                        </a>
+                        <!-- /Brand logo-->
+                        <!-- Left Text-->
+                        <div class="d-none d-lg-flex col-lg-8 align-items-center p-5">
+                            <div class="w-100 d-lg-flex align-items-center justify-content-center px-5">
+                              <%= image_tag('pages/forgot-password-v2.svg', class: "img-fluid") %>
+                            </div>
+                        </div>
+                        <!-- /Left Text-->
+                        <!-- Forgot password-->
+                        <div class="d-flex col-lg-4 align-items-center auth-bg px-2 p-lg-5">
+                            <div class="col-12 col-sm-8 col-md-6 col-lg-12 px-xl-2 mx-auto">
+                                <h2 class="card-title fw-bold mb-1"> <%= I18n.t('views.devise.password.title')%> 🔒</h2>
+                                <p class="card-text mb-2">
+                                  <%= I18n.t('views.devise.password.message')%>
+                                </p>
+                                <%= form_for(resource, as: resource_name, class:"auth-forgot-password-form mt-2", url: password_path(resource_name), html: { method: :post }) do |f| %>
+                                    <div class="mb-1">
+                                      <%= f.label :email, class:"form-label" %>
+                                      <%= f.email_field :email, autofocus: true, autocomplete: "email", class:"form-control"  %>
+                                    </div>
+                                    <%= f.button :submit, class:"btn btn-primary w-100", tabindex:"4" do %>
+                                      <%= I18n.t('devise.passwords.edit.submit')%>
+                                    <% end %>
 
-<%= form_for(resource, as: resource_name, url: password_path(resource_name), html: { method: :post }) do |f| %>
-  <%= render "devise/shared/error_messages", resource: resource %>
+                                <% end %>
+                                <p class="text-center mt-2">
+                                 <%= link_to new_registration_path(resource_name) do %>
+                                    <i data-feather="chevron-left"></i>
+                                    <%= I18n.t('views.devise.password.link')%>
+                                  <% end %>
+                                </p>
 
-  <div class="field">
-    <%= f.label :email %><br />
-    <%= f.email_field :email, autofocus: true, autocomplete: "email" %>
-  </div>
 
-  <div class="actions">
-    <%= f.submit "Send me reset password instructions" %>
-  </div>
-<% end %>
-
-<%= render "devise/shared/links" %>
+                            </div>
+                        </div>
+                        <!-- /Forgot password-->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- END: Content-->

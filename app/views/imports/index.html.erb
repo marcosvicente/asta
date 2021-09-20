@@ -1,39 +1,71 @@
-<p id="notice"><%= notice %></p>
+<% if notice.present? %>
+  <div class="alert alert-primary" role="alert">
+    <div class="alert-body">
+      <%= notice%>
+    </div>
+  </div>
+<% end %>
 
-<h1>Imports</h1>
+<div id="dataTable" class="card">
+  <div class="card-header">
+    <h4 class="card-title">
+      <%= I18n.t('activerecord.models.import.other') %>
+    </h4>
+  </div>
+  <div class="card-body">
+    <div class="table-responsive">
+      <table class="table">
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Status</th>
+            <th>User</th>
+            <th colspan="3"></th>
+          </tr>
+        </thead>
 
-<div class="table-responsive">
-  <table class="table">
-    <thead>
-      <tr>
-        <th>Status</th>
-        <th>File</th>
-        <th>User</th>
-        <th>Name</th>
-        <th colspan="3"></th>
-      </tr>
-    </thead>
-
-    <tbody>
-      <% @imports.each do |import| %>
-       <tr class="table-active">
-       <td><%= import.name %></td>
+        <tbody>
+          <% @imports.each do |import| %>
+          <tr>
+          <td><%= import.name %></td>
           <td>
-          <span class="badge rounded-pill badge-light-primary me-1">
-                <%= import.status %>
+            <% if import.status == "enqueued" %>
+              <span class="badge rounded-pill badge-light-secondary me-1">
+              <%= import.human_status %>
               </span>
-          </td>
-          <td><%= import.file %></td>
-          <td><%= import.user.email %></td>
-         
-          <td><%= link_to 'Show', import %></td>
-          <td><%= link_to 'Edit', edit_import_path(import) %></td>
-          <td><%= link_to 'Destroy', import, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-        </tr>
-      <% end %>
-    </tbody>
-  </table>
+            <% elsif import.status == "processing" %>
+              <span class="badge rounded-pill badge-light-primary me-1">
+              <%= import.human_status %>
+              </span>
+            <% elsif import.status == "done" %>
+              <span class="badge rounded-pill badge-light-success me-1">
+              <%= import.human_status %>
+              </span>
+            <% end%>
+              </span>
+            </td>
+              <td><%= import.user.email %></td>
+              <td><%= link_to I18n.t('views.show'), import %></td>
+              <td><%= link_to I18n.t('views.edit'), edit_import_path(import) %></td>
+              <% if current_user.kind == "admin" || import.user_id == current_user.id %>
+              <td><%= link_to I18n.t('views.destroy'), import, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+              <% end %>
+
+            </tr>
+          <% end %>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  <div class="pagination-block">
+    <%= paginate @imports, class: "pagination"%>
+  </div>
 </div>
+  
+
+ 
+
+<%= link_to I18n.t('views.new'), new_import_path, class:"btn btn-primary waves-effect waves-float waves-light" %>
 
 
-<%= link_to 'New Import', new_import_path, class:"btn btn-primary waves-effect waves-float waves-light" %>
+

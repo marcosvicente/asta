@@ -6,4 +6,10 @@ class User < ApplicationRecord
 
   validates :email, uniqueness: true
   enum kind: [:commom, :admin]
+
+  paginates_per 50
+
+  def human_kind
+    User.human_enum_name(:kind, self.kind) if self.kind
+  end
 end

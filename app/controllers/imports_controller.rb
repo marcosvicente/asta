@@ -3,7 +3,7 @@ class ImportsController < ApplicationController
 
   # GET /imports or /imports.json
   def index
-    @imports = Import.all
+    @imports = Import.order("created_at DESC").page(params[:page]).per(10)
   end
 
   # GET /imports/1 or /imports/1.json
@@ -38,6 +38,7 @@ class ImportsController < ApplicationController
 
   # PATCH/PUT /imports/1 or /imports/1.json
   def update
+    @import.status = 0
     respond_to do |format|
       if @import.update(import_params)
         format.html { redirect_to @import, notice: "Import was successfully updated." }

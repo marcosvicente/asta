@@ -1,0 +1,102 @@
+pt-BR:
+  welcome: "Bem vindo!"
+  show_visualization_btn: "Ver todos os continentes"
+  activerecord:
+    models:
+      user:       
+        one: Usuário
+        other: Usuários
+      import:
+        one: Importação
+        other: Importações
+    attributes: 
+      timestamp: &timestamp
+        created_at: Criado em
+        updated_at: Atualizado em
+      import: 
+        status: Status
+        statuses:
+          enqueued: Enfileirado
+          processing: Processando
+          done: Finalizado
+        file: Arquivo
+        user_id: Usuário
+        user: Usuário
+        name: Nome
+      user: 
+        kind: Tipo
+        kinds:
+          commom: Comum
+          admin: Administrador
+        confirmation_sent_at: Confirmação enviada em
+        confirmation_token: Token de confirmação
+        confirmed_at: Confirmado em
+        created_at: Criado em
+        current_password: Senha atual
+        current_sign_in_at: Atualmente logado em
+        current_sign_in_ip: IP do acesso atual
+        email: E-mail
+        encrypted_password: Senha criptografada
+        failed_attempts: Tentativas sem sucesso
+        last_sign_in_at: Último acesso em
+        last_sign_in_ip: Último IP de acesso
+        locked_at: Bloqueado em
+        password: Senha
+        password_confirmation: Confirme sua senha
+        remember_created_at: Lembrar criado em
+        remember_me: Lembre-se de mim
+        reset_password_sent_at: Resetar senha enviado em
+        reset_password_token: Resetar token de senha
+        sign_in_count: Contagem de acessos
+        unconfirmed_email: E-mail não confirmado
+        unlock_token: Token de desbloqueio
+        updated_at: Atualizado em
+    errors:
+      models:
+        user:
+          attributes:
+            email:
+              blank: Email não pode estar vazia
+              taken: Email já existe
+            password:
+              blank: Senha não pode estar vazia
+              too_short: Senha muito curta
+            password_confirmation:
+              confirmation: 
+  views:
+    all: Todos
+    new: Novo
+    edit: Editar
+    show: Ver
+    destroy: Deletar
+    back: Voltar
+    action: Ações
+    change_language: Mudar a lingua
+    profile: Perfil
+    logout: Logout
+    import: 
+      lasted: Ultimas Importações
+      not: Sem Importações
+    pagination:
+      first: "&laquo; Primeira"
+      last: "Última &raquo;"
+      previous: "&lsaquo; Anterior"
+      next: "Próxima &rsaquo;"
+      truncate: "&hellip;"
+  helpers:
+    page_entries_info:
+      one_page:
+        display_entries:
+          zero: "Nenhum(a) %{entry_name} encontrado(a)"
+          one: "Exibindo <b>1</b> %{entry_name}"
+          other: "Exibindo <b>todas %{count}</b> %{entry_name}"
+      more_pages:
+        display_entries: "Exibindo %{entry_name} <b>%{first}&nbsp;-&nbsp;%{last}</b> de <b>%{total}</b> no total"
+  controller:
+    user:
+      work:
+        update: Usuario foi atualizado.
+        new: Usuario foi criado.
+      error:
+        updated:  error prohibited this user from being saved
+        new:  error prohibited this user from being saved

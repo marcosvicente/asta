@@ -1,4 +1,4 @@
-<div  style="margin: 0 auto; witdh: 400px;">
+<div >
 
   <div class="row">
       <div class="col-12">
@@ -9,29 +9,36 @@
             <div class="row">
               <%= form_with(model: import) do |form| %>
                 <% if import.errors.any? %>
-                  <div id="error_explanation">
-                    <h2><%= pluralize(import.errors.count, "error") %> prohibited this import from being saved:</h2>
-
-                    <ul>
-                      <% import.errors.each do |error| %>
-                        <li><%= error.full_message %></li>
+                  <div class="alert alert-danger" role="alert">
+                    <div class="alert-body">
+                      <span>
+                        <%= pluralize(import.errors.count, "error") %> prohibited this import from being saved:
+                      </span>
+                    </div>
+                    </div>
+                    <% import.errors.each do |error| %>
+                      <div class="alert alert-danger" role="alert">
+                        <div class="alert-body">
+                          <span>
+                            <%= error.full_message %>
+                          </span>
+                        </div>
+                      </div>
                       <% end %>
-                    </ul>
-                  </div>
-                <% end %>
-                  <div class="col-sm-6 col-12">
+                    <% end %>
+                  <div class="col-sm-12 col-12">
                     <div class="field mb-2">
                       <%= form.label :file, class: "form-label" %>
                       <%= form.file_field :file, class: "form-control" %>
                     </div>
                   </div>
-                  <div class="col-sm-6 col-12">
+                  <div class="col-sm-12 col-12">
                     <div class="field mb-2">
                       <%= form.label :name, class: "form-label" %>
                       <%= form.text_field :name, class: "form-control" %>
                     </div>
                   </div>
-                  <div class="col-sm-6 col-12">
+                  <div class="col-sm-12 col-12">
                     <div class="field mb-2">
                       <%= form.button :submit, value:"Log in", class:"btn btn-primary w-100", tabindex:"4" %>
                     </div>

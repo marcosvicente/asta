@@ -1,27 +1,59 @@
-<p id="notice"><%= notice %></p>
+<% if notice.presence %> 
+<div class="alert alert-primary" role="alert">
+  <div class="alert-body">
+    <%= notice %>
+  </div>
+</div>
+ <% end%>
+<div class="card">
+  <div class="card-header">
+    <h4 class="card-title">
+      <%= I18n.t('activerecord.models.user.other') %>
+    </h4>
+  </div>
+  <div class="card-body">
+    <table class="table" class="card">
 
-<h1>users</h1>
+      <thead>
+        <tr>
+          <th>
+          <%= I18n.t('activerecord.attributes.user.email') %>
+          </th>
+          <th>
+            <%= I18n.t('activerecord.attributes.user.kind') %>
 
-<table>
-  <thead>
-    <tr>
-      <th>Email</th>
-      
-      <th colspan="3"></th>
-    </tr>
-  </thead>
+          </th>
+          <th colspan="3">
+            <%= I18n.t('views.action') %>
+          </th>
+        </tr>
+      </thead>
 
-  <tbody>
-    <% @users.each do |user| %>
-      <tr>
-        <td><%= user.email %></td>
-      
-        <td><%= link_to 'Edit', edit_app_user_path(user) %></td>
-      </tr>
-    <% end %>
-  </tbody>
-</table>
+      <tbody>
+        <% @users.each do |user| %>
+          <tr>
+            <td><%= user.email %></td>
+              <td>
+              <% if user.kind == "commom" %>
+                <span class="badge rounded-pill badge-light-primary me-1">
+                  <%= user.human_kind %>
+                </span>
+              <% elsif user.kind == "admin" %>
+                  <span class="badge rounded-pill badge-light-success me-1">
+                    <%= user.human_kind %> 
+                  </span>
+              <% end %>
+              </td>
+            <td><%= link_to I18n.t('views.edit'), edit_app_user_path(user) %></td>
+          </tr>
+        <% end %>
+      </tbody>
+    </table>
+  </div>
+  <div class="pagination-block">
+  <%= paginate @users, class: "pagination"%>
+</div>
 
-<br>
+</div>
 
-<%= link_to 'New user', new_app_user_path %>
+<%= link_to I18n.t('views.new'), new_app_user_path, class:"btn btn-primary waves-effect waves-float waves-light"%>

@@ -16,11 +16,22 @@ user = User.new(
 )
 user.save!
 
-10.times do
+100.times do
   user = User.new(
     email: Faker::Internet.email, 
     password: '123456789', 
     password_confirmation: '123456789'
   )
   user.save!
+ 
+
+end
+
+100.times do
+  import = Import.new(
+    name: Faker::FunnyName.name,
+    file: Faker::File.file_name,
+    user: User.all.sample
+  )
+  import.save!
 end

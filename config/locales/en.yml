@@ -1,33 +1,101 @@
-# Files in the config/locales directory are used for internationalization
-# and are automatically loaded by Rails. If you want to use locales other
-# than English, add the necessary files in this directory.
-#
-# To use the locales, use `I18n.t`:
-#
-#     I18n.t 'hello'
-#
-# In views, this is aliased to just `t`:
-#
-#     <%= t('hello') %>
-#
-# To use a different locale, set it with `I18n.locale`:
-#
-#     I18n.locale = :es
-#
-# This would use the information in config/locales/es.yml.
-#
-# The following keys must be escaped otherwise they will not be retrieved by
-# the default I18n backend:
-#
-# true, false, on, off, yes, no
-#
-# Instead, surround them with single quotes.
-#
-# en:
-#   'true': 'foo'
-#
-# To learn more, please read the Rails Internationalization guide
-# available at https://guides.rubyonrails.org/i18n.html.
-
 en:
-  hello: "Hello world"
+  welcome: Welcome!
+  show_visualization_btn: Show all continents
+  activerecord:
+    models:
+      user:       
+        one: User
+        other: Users
+      import:
+        one: Importation
+        other: Importations
+    attributes: 
+      timestamp: &timestamp
+        created_at: Created at
+        updated_at: Updated at
+      import: 
+        status: Status
+        statuses:
+          enqueued: Enqueued
+          processing: Processing
+          done: Done
+        file: File
+        user_id: User
+        user: User
+        name: Name
+      user: 
+        kind: Kind
+        kinds:
+          commom: Commom
+          admin: Administrator
+        confirmation_sent_at: Confirmação enviada em
+        confirmation_token: Token de confirmação
+        confirmed_at: Confirmado em
+        created_at: Criado em
+        current_password: Senha atual
+        current_sign_in_at: Atualmente logado em
+        current_sign_in_ip: IP do acesso atual
+        email: E-mail
+        encrypted_password: Senha criptografada
+        failed_attempts: Tentativas sem sucesso
+        last_sign_in_at: Último acesso em
+        last_sign_in_ip: Último IP de acesso
+        locked_at: Bloqueado em
+        password: Senha
+        password_confirmation: Confirme sua senha
+        remember_created_at: Lembrar criado em
+        remember_me: Lembre-se de mim
+        reset_password_sent_at: Resetar senha enviado em
+        reset_password_token: Resetar token de senha
+        sign_in_count: Contagem de acessos
+        unconfirmed_email: E-mail não confirmado
+        unlock_token: Token de desbloqueio
+        updated_at: Atualizado em
+    errors:
+      models:
+        user:
+          attributes:
+            email:
+              blank: Email not be blank
+              taken: Email just exist
+            password:
+              blank: Password not be blank
+              too_short: Password too Short
+            password_confirmation:
+              confirmation: 
+
+  views:  
+    all: All
+    new: New
+    edit: Editar
+    show: Show
+    destroy: Delete
+    back: Back
+    action: Action
+    change_language: Change our language
+    profile: Profile
+    logout: Logout
+    import: 
+      lasted: Lasted Importation
+      not: No Importation
+    pagination:
+      first: "&laquo; First"
+      last: "Last &raquo;"
+      previous: "&lsaquo; Prev"
+      next: "Next &rsaquo;"
+      truncate: "&hellip;"
+  helpers:
+    page_entries_info:
+      one_page:
+        display_entries:
+          zero: "No %{entry_name} found"
+          one: "Displaying <b>1</b> %{entry_name}"
+          other: "Displaying <b>all %{count}</b> %{entry_name}"
+      more_pages:
+        display_entries: "Displaying %{entry_name} <b>%{first}&nbsp;-&nbsp;%{last}</b> of <b>%{total}</b> in total"
+
+  controller:
+    user:
+      work:
+        update: User was successfully updated.
+        new: Usuário was create.

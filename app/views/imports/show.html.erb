@@ -1,24 +1,166 @@
 <p id="notice"><%= notice %></p>
+<section class="basic-timeline">
+    <div class="row">
+      <div class="col-lg-6">
+      <div class="card">
+        <div class="card-body">
+         <p>
+            <strong>Name:</strong>
+            <%= @import.name %>
+          </p>
+          <p>
+            <strong>Status:</strong>
+            <%= @import.human_status %>
+          </p>
+          <p>
+            <strong>User:</strong>
+            <%= @import.user.email %>
+          </p>
+          <%= link_to 'Edit', edit_import_path(@import) %> |
+          <%= link_to 'Back', imports_path %>
+         
+        </div>
+      </div>
+    
+        </div>
+        <div class="col-lg-6">
+            <div class="card">
+                <div class="card-header">
+                    <h4 class="card-title">
+                    <%= I18n.t('activerecord.attributes.import.status') %>
+                    </h4>
+                </div>
+                <div class="card-body">
 
-<p>
-  <strong>Status:</strong>
-  <%= @import.status %>
-</p>
+                  <% if @import.status == "enqueued" %>
+                    <ul class="timeline">
+                        <li class="timeline-item">
+                            <span class="timeline-point timeline-point-indicator timeline-point-secondary"></span>
+                            <div class="timeline-event">
+                                <div class="d-flex justify-content-between flex-sm-row flex-column mb-sm-0 mb-1">
+                                    <h6> 
+                                      <%= I18n.t('activerecord.attributes.import.statuses.enqueued') %>
+                                    </h6>
+                                    <span class="timeline-event-time">
+                                      <%= I18n.t('activerecord.attributes.timestamp.created_at') %>:
+                                      <%= @import.created_at.to_date %>
+                                    </span>
+                                </div>
+                                
+                            </div>
+                        </li>
+                        <li class="timeline-item">
+                            <span class="timeline-point timeline-point-secondary timeline-point-indicator"></span>
+                            <div class="timeline-event">
+                                <div class="d-flex justify-content-between flex-sm-row flex-column mb-sm-0 mb-1">
+                                    <h6>
+                                      <%= I18n.t('activerecord.attributes.import.statuses.processing') %>
+                                    </h6>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="timeline-item">
+                            <span class="timeline-point timeline-point-secondary timeline-point-indicator"></span>
+                            <div class="timeline-event">
+                                <div class="d-flex justify-content-between flex-sm-row flex-column mb-sm-0 mb-1">
+                                    <h6>
+                                      <%= I18n.t('activerecord.attributes.import.statuses.done') %>
+                                    </h6>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                  <% elsif @import.status == "processing" %>
+                      <ul class="timeline">
+                        <li class="timeline-item">
+                            <span class="timeline-point timeline-point-secondary timeline-point-indicator"></span>
+                            <div class="timeline-event">
+                                <div class="d-flex justify-content-between flex-sm-row flex-column mb-sm-0 mb-1">
+                                    <h6> 
+                                      <%= I18n.t('activerecord.attributes.import.statuses.enqueued') %>
+                                    </h6>
+                                    <span class="timeline-event-time">
+                                      <%= I18n.t('activerecord.attributes.timestamp.created_at') %>:
+                                      <%= @import.created_at.to_date %>
+                                    </span>
+                                </div>
+                                
+                            </div>
+                        </li>
+                        <li class="timeline-item">
+                            <span class="timeline-point timeline-point-indicator"></span>
+                            <div class="timeline-event">
+                                <div class="d-flex justify-content-between flex-sm-row flex-column mb-sm-0 mb-1">
+                                    <h6>
+                                      <%= I18n.t('activerecord.attributes.import.statuses.processing') %>
+                                    </h6>
+                                    <span class="timeline-event-time">
+                                      <%= I18n.t('activerecord.attributes.timestamp.updated_at') %>:
+                                      <%= @import.updated_at.to_date %>
+                                    </span>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="timeline-item">
+                            <span class="timeline-point timeline-point-secondary timeline-point-indicator"></span>
+                            <div class="timeline-event">
+                                <div class="d-flex justify-content-between flex-sm-row flex-column mb-sm-0 mb-1">
+                                    <h6>
+                                      <%= I18n.t('activerecord.attributes.import.statuses.done') %>
+                                    </h6>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                  <% elsif @import.status == "done" %>
+                      <ul class="timeline">
+                        <li class="timeline-item">
+                            <span class="timeline-point timeline-point-indicator timeline-point-secondary"></span>
+                            <div class="timeline-event">
+                                <div class="d-flex justify-content-between flex-sm-row flex-column mb-sm-0 mb-1">
+                                    <h6> 
+                                      <%= I18n.t('activerecord.attributes.import.statuses.enqueued') %>
+                                    </h6>
+                                    <span class="timeline-event-time">
+                                      <%= I18n.t('activerecord.attributes.timestamp.created_at') %>:
+                                      <%= @import.created_at.to_date %>
+                                    </span>
+                                </div>
+                                
+                            </div>
+                        </li>
+                        <li class="timeline-item">
+                            <span class="timeline-point timeline-point-indicator"></span>
+                            <div class="timeline-event">
+                                <div class="d-flex justify-content-between flex-sm-row flex-column mb-sm-0 mb-1">
+                                    <h6>
+                                      <%= I18n.t('activerecord.attributes.import.statuses.processing') %>
+                                    </h6>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="timeline-item">
+                            <span class="timeline-point timeline-point-success timeline-point-indicator"></span>
+                            <div class="timeline-event">
+                                <div class="d-flex justify-content-between flex-sm-row flex-column mb-sm-0 mb-1">
+                                    <h6>
+                                      <%= I18n.t('activerecord.attributes.import.statuses.done') %>
+                                    </h6>
+                                    <span class="timeline-event-time">
+                                      <%= I18n.t('activerecord.attributes.timestamp.updated_at') %>:
+                                      <%= @import.updated_at.to_date %>
+                                    </span>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                  <% end%>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+</section>
 
-<p>
-  <strong>File:</strong>
-  <%= @import.file %>
-</p>
 
-<p>
-  <strong>User:</strong>
-  <%= @import.user_id %>
-</p>
 
-<p>
-  <strong>Name:</strong>
-  <%= @import.name %>
-</p>
-
-<%= link_to 'Edit', edit_import_path(@import) %> |
-<%= link_to 'Back', imports_path %>

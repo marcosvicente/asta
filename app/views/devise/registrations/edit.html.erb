@@ -18,7 +18,12 @@
           <% if devise_mapping.confirmable? && resource.pending_reconfirmation? %>
             <div>Currently waiting confirmation for: <%= resource.unconfirmed_email %></div>
           <% end %>
-
+          <div class="col-sm-12 col-12">
+            <div class="field mb-2">
+              <%= f.label :current_password, class: "form-label"%> 
+              <%= f.password_field :current_password, autocomplete: "current-password", class: "form-control" %>
+            </div>  
+          </div>
           <div class="field">
             <%= f.label :password , class: "form-label" %> 
             <%= f.password_field :password, autocomplete: "new-password", class: "form-control"%>
@@ -31,15 +36,12 @@
             </div>
           </div>
 
+          
           <div class="col-sm-12 col-12">
             <div class="field mb-2">
-              <%= f.label :current_password, class: "form-label"%> 
-              <%= f.password_field :current_password, autocomplete: "current-password", class: "form-control" %>
-            </div>  
-          </div>
-          <div class="col-sm-12 col-12">
-            <div class="field mb-2">
-              <%= f.button :submit, value: I18n.t('views.update'), class:"btn btn-primary w-100" %>
+              <%= f.button :submit,  class:"btn btn-primary w-100" do %>
+                <%= I18n.t('views.update')%>
+              <% end%>
             </div>  
           </div>
         </div>

@@ -63,7 +63,6 @@ en:
               too_short: Password too Short
             password_confirmation:
               confirmation: 
-
   views:  
     all: All
     new: New
@@ -72,6 +71,7 @@ en:
     destroy: Delete
     back: Back
     action: Action
+    update: Update
     change_language: Change our language
     profile: Profile
     logout: Logout

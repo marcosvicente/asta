@@ -257,7 +257,7 @@ const tip = d3.tip()
   .attr('class', 'd3-tip')
   .offset([-10, 0])
   .html((d) => {
-    return "<div class='tip-name'>" + d[0] + "</div><div class='tip-gdp'>GDP Per Capita:<br>" + formatCurrency(d[2]) + "<br><div class='tip-gdp'>Life Expectancy: " + d[1] + " yrs</div><div class='tip-gdp'>Gini Index: " + d[3] + "</div>";
+    return "<div class='tip-name'>" + d[0] + "</div><div class='tip-gdp'>GDP Per Capita:<br>" + formatCurrency(d[2]) + "<br><div class='tip-gdp'>Life Expectancy: " + d[1] + " yrs</div><div class='tip-gdp'>Gini Index: " + d[3] + "</div>"; // infomativo
   });
 
 const svg = d3.select(".cluster")
@@ -275,10 +275,10 @@ svg.selectAll("circle")
   .data(dataset)
   .enter()
   .append("circle")
-  .attr("cx", (d) => xScale(d[3]))
-  .attr("cy", (d) => yScale(d[1]))
-  .attr("r", (d) => rScale(d[2]))
-  .attr("fill", (d) => color(d[4]))
+  .attr("cx", (d) => xScale(d[3])) // eixo x
+  .attr("cy", (d) => yScale(d[1])) // eixo y
+  .attr("r", (d) => rScale(d[2])) // tamanha da bola - escala
+  .attr("fill", (d) => color(d[4])) // grupo
   .attr("id", (d) => d[0])
   .attr("class", (d) => `circle ${d[4]}`)
   .on('mouseover', (d) => {

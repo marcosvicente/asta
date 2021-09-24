@@ -46,9 +46,10 @@
             </td>
               <td><%= import.user.email %></td>
               <td><%= link_to I18n.t('views.show'), import %></td>
-              <td><%= link_to I18n.t('views.edit'), edit_import_path(import) %></td>
-              <% if current_user.kind == "admin" || import.user_id == current_user.id %>
-              <td><%= link_to I18n.t('views.destroy'), import, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+               <% if current_user.kind == "admin" || import.user_id == current_user.id %>
+                <td><%= link_to I18n.t('views.edit'), edit_import_path(import) %></td>
+              
+                <td><%= link_to I18n.t('views.destroy'), import, method: :delete, data: { confirm: 'Are you sure?' } %></td>
               <% end %>
 
             </tr>

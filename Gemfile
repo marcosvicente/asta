@@ -49,6 +49,7 @@ gem 'rails-i18n', '~> 6.0.0' # For 6.0.0 or higher
 
 gem 'sprockets', '~> 4'
 gem 'sprockets-rails', :require => 'sprockets/railtie'
+gem 'rack-cors'
 
 group :development, :test do
   gem 'pry-byebug'

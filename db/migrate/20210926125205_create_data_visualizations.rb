@@ -5,6 +5,7 @@ class CreateDataVisualizations < ActiveRecord::Migration[6.1]
       t.string :cy
       t.string :r
       t.string :data_id
+      t.string :cluster
       t.references :import, null: false, foreign_key: true
 
       t.timestamps

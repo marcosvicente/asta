@@ -1,5 +1,4 @@
 class DataVisualizationsController < ApplicationController
-  before_action :set_data_visualization, only: %i[ show ]
 
   # GET /data_visualizations or /data_visualizations.json
   def index
@@ -34,9 +33,5 @@ class DataVisualizationsController < ApplicationController
     
     render json: @data_visualization
   end
-  private
-    # Use callbacks to share common setup or constraints between actions.
-    def set_data_visualization
-      @data_visualization = DataVisualization.find(params[:id])
-    end
+  
 end

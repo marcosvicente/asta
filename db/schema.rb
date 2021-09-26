@@ -25,10 +25,11 @@ ActiveRecord::Schema.define(version: 2021_09_26_130616) do
   end
 
   create_table "data_visualization_items", force: :cascade do |t|
-    t.string "cx"
-    t.string "cy"
-    t.string "r"
+    t.integer "cx"
+    t.integer "cy"
+    t.integer "r"
     t.string "data_id"
+    t.string "cluster"
     t.bigint "data_visualization_id", null: false
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
@@ -40,6 +41,7 @@ ActiveRecord::Schema.define(version: 2021_09_26_130616) do
     t.string "cy"
     t.string "r"
     t.string "data_id"
+    t.string "cluster"
     t.bigint "import_id", null: false
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false

@@ -5,6 +5,7 @@
     "cx": "Gini index",
     "cy": "Life expect",
     "r": "Renda per capita",
+    "cluster": "Continete",
     "data_id": "Pais"
   },
   "values": [

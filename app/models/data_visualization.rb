@@ -1,0 +1,2 @@
+class DataVisualization < ApplicationRecord
+end

@@ -5,28 +5,28 @@
     "cx": "Gini index",
     "cy": "Life expect",
     "r": "Renda per capita",
-    "id": "Pais"
+    "data_id": "Pais"
   },
   "values": [
       {
       "cx": "gini numero",
       "cy": "life_expect numero",
       "r": "renda numero",
-      "id": "Brazil",
+      "data_id": "Brazil",
+      "cluster": "America",
       "info": {
         "info1": "info1"
       },
-      "cluster": "America"
     },
     {
       "cx": "gini numero",
       "cy": "life_expect numero",
       "r": "renda numero",
-      "id": "Brazil",
+      "data_id": "Brazil",
+      "cluster": "America",
       "info": {
         "info1": "info1"
       },
-      "cluster": "America"
     }
   ]
 }

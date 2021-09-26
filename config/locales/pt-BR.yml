@@ -9,6 +9,9 @@ pt-BR:
       import:
         one: Importação
         other: Importações
+      data_visualization:
+        one: Vizualiazação
+        other: Vizualiazações
     attributes: 
       timestamp: &timestamp
         created_at: Criado em

@@ -1,24 +1,11 @@
-<p id="notice"><%= notice %></p>
+<div class="button-wrap">
+  <button class="btn btn-hide" id="btn">
+    <%= t('show_visualization_btn') %>
+  </button>
+</div>
 
-<p>
-  <strong>Cx:</strong>
-  <%= @data_visualization.cx %>
-</p>
+<div class="cluster" data-id="<%= @data_visualization.id %>"></div>
 
-<p>
-  <strong>Cy:</strong>
-  <%= @data_visualization.cy %>
-</p>
-
-<p>
-  <strong>R:</strong>
-  <%= @data_visualization.r %>
-</p>
-
-<p>
-  <strong>Id:</strong>
-  <%= @data_visualization.id %>
-</p>
-
-<%= link_to 'Edit', edit_data_visualization_path(@data_visualization) %> |
-<%= link_to 'Back', data_visualizations_path %>
+<script src="https://d3js.org/d3.v4.min.js"></script>
+<%= javascript_include_tag 'd3.tip.js' %>
+<%= javascript_include_tag 'btn_grafic.js' %>

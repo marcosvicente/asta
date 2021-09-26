@@ -4,6 +4,8 @@ Rails.application.routes.draw do
   # mount Sidekiq::Web => '/sidekiq'  
 
   resources :data_visualizations, only: %i[ index show ]
+  get 'visualizations/:id/', to: 'data_visualizations#visualizations'
+
   devise_for :users  
 
   namespace :app do

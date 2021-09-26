@@ -104,7 +104,7 @@
       <div class="shadow-bottom"></div>
       <div class="main-menu-content">
         <ul class="navigation navigation-main" id="main-menu-navigation" data-menu="menu-navigation">
-        <li class=" navigation-header">
+          <li class=" navigation-header">
             <span>
               <%= I18n.t('activerecord.models.import.other') %>
             </span>
@@ -136,7 +136,21 @@
               </li>
             </ul>
           </li>
-
+          <li class=" navigation-header">
+            <span>
+              <%= I18n.t('activerecord.models.data_visualization.other') %>
+            </span>
+            <i data-feather="more-horizontal"></i>
+          </li>
+          <li class=" nav-item">
+          <%= link_to(data_visualizations_path(locale: I18n.locale), class: "d-flex align-items-center")  do %>
+            <i data-feather="file"></i>
+            <span class="menu-title text-truncate">      
+              <%= I18n.t('activerecord.models.data_visualization.other') %>
+            </span>
+          <% end %>
+           
+          </li>
           <% if current_user.kind == "admin" %>
             <li class=" navigation-header">
               <span>
@@ -372,7 +386,7 @@
     <%= javascript_include_tag 'core/app.js' %>
     <%= javascript_include_tag 'scripts/customizer' %>
     
-    <%# <%= javascript_include_tag 'scripts/pages/dashboard-analytics.js' %> %>
+    <%= javascript_include_tag 'scripts/pages/dashboard-analytics.js' %>
     <script>
     $(document).ready(function(){
         if (feather) {

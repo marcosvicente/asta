@@ -1,0 +1,4 @@
+:queues:
+  - visualization
+
+:backtrace: true

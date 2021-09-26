@@ -16,13 +16,8 @@
   <tbody>
     <% @data_visualizations.each do |data_visualization| %>
       <tr>
-        <td><%= data_visualization.cx %></td>
-        <td><%= data_visualization.cy %></td>
-        <td><%= data_visualization.r %></td>
-        <td><%= data_visualization.id %></td>
+        <td><%= data_visualization.import_id %></td>
         <td><%= link_to 'Show', data_visualization %></td>
-        <td><%= link_to 'Edit', edit_data_visualization_path(data_visualization) %></td>
-        <td><%= link_to 'Destroy', data_visualization, method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>
     <% end %>
   </tbody>
@@ -30,4 +25,3 @@
 
 <br>
 
-<%= link_to 'New Data Visualization', new_data_visualization_path %>

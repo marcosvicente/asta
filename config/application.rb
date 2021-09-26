@@ -12,6 +12,7 @@ module Asta
     config.load_defaults 6.1
     config.eager_load_paths << Rails.root.join('lib')
     config.assets.check_precompiled_asset = false
+    config.active_job.queue_adapter = :sidekiq
 
     # Configuration for the application, engines, and railties goes here.
     #

@@ -1,3 +1,3 @@
 class DataVisualizationItem < ApplicationRecord
-  belongs_to :data_visualizarion
+  belongs_to :data_visualization
 end

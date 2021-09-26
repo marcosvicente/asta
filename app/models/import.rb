@@ -3,7 +3,7 @@ class Import < ApplicationRecord
 
   validates :status, :name, presence: true
 
-  enum status: [:enqueued, :processing, :done]
+  enum status: [:enqueued, :processing, :done, :error]
 
   # carrierwave
   mount_uploader :file, ImportUploader

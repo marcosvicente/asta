@@ -5,7 +5,7 @@ class CreateImports < ActiveRecord::Migration[6.1]
       t.string :file
       t.references :user, null: false, foreign_key: true
       t.string :name
-
+      t.text :message
       t.timestamps
     end
   end

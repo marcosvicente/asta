@@ -27,11 +27,11 @@ user.save!
 
 end
 
-100.times do
-  import = Import.new(
-    name: Faker::FunnyName.name,
-    file: Faker::File.file_name,
-    user: User.all.sample
-  )
-  import.save!
-end
+# 100.times do
+#   import = Import.new(
+#     name: Faker::FunnyName.name,
+#     file: Faker::File.file_name,
+#     user: User.all.sample
+#   )
+#   import.save!
+# end

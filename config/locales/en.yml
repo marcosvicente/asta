@@ -71,6 +71,7 @@ en:
     destroy: Delete
     back: Back
     action: Action
+    save: Save
     update: Update
     change_language: Change our language
     profile: Profile

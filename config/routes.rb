@@ -1,4 +1,8 @@
 Rails.application.routes.draw do
+  # sidekiq
+  # require 'sidekiq/web'
+  # mount Sidekiq::Web => '/sidekiq'  
+
   resources :data_visualizations, only: %i[ index show ]
   devise_for :users  
 
@@ -8,5 +12,4 @@ Rails.application.routes.draw do
   resources :imports
   
   root to: "home#index"
-  
 end

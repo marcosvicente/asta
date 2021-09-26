@@ -16,7 +16,8 @@ ActiveRecord::Schema.define(version: 2021_09_26_130616) do
   enable_extension "plpgsql"
 
   create_table "data_visualization_infos", force: :cascade do |t|
-    t.string "values"
+    t.string "column"
+    t.string "value"
     t.bigint "data_visualization_item_id", null: false
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
@@ -39,8 +40,10 @@ ActiveRecord::Schema.define(version: 2021_09_26_130616) do
     t.string "cy"
     t.string "r"
     t.string "data_id"
+    t.bigint "import_id", null: false
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.index ["import_id"], name: "index_data_visualizations_on_import_id"
   end
 
   create_table "imports", force: :cascade do |t|
@@ -48,6 +51,7 @@ ActiveRecord::Schema.define(version: 2021_09_26_130616) do
     t.string "file"
     t.bigint "user_id", null: false
     t.string "name"
+    t.text "message"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.index ["user_id"], name: "index_imports_on_user_id"
@@ -68,5 +72,6 @@ ActiveRecord::Schema.define(version: 2021_09_26_130616) do
 
   add_foreign_key "data_visualization_infos", "data_visualization_items"
   add_foreign_key "data_visualization_items", "data_visualizations"
+  add_foreign_key "data_visualizations", "imports"
   add_foreign_key "imports", "users"
 end

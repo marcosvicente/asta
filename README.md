@@ -13,20 +13,22 @@
       "cx": "gini numero",
       "cy": "life_expect numero",
       "r": "renda numero",
-      "data_id": "Brazil",
       "cluster": "America",
+      "data_id": "Brazil",
       "info": {
-        "info1": "info1"
+        "column": "homen",
+        "valor": "1.90"
       },
     },
     {
       "cx": "gini numero",
       "cy": "life_expect numero",
       "r": "renda numero",
-      "data_id": "Brazil",
       "cluster": "America",
+      "data_id": "Brazil",
       "info": {
-        "info1": "info1"
+        "column": "homen",
+        "valor": "1.90"
       },
     }
   ]

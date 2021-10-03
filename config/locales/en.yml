@@ -10,8 +10,8 @@ en:
         one: Importation
         other: Importations
       data_visualization:
-        one: Vizualization
-        other: Vizualizations
+        one: Visualization
+        other: Visualizations
     attributes: 
       timestamp: &timestamp
         created_at: Created at

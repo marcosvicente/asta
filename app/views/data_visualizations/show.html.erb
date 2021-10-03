@@ -3,6 +3,23 @@
     <%= t('show_visualization_btn') %>
   </button>
 </div>
+<script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
 
-<div class="cluster" data-id="<%= @data_visualization.id %>"></div>
+<%# <div class="cluster" data-id="<%= @data_visualization.id"></div> %>
 
+<% options = {
+  title: 'test',
+  xtitle: 'Gini index',
+  ytitle: 'Per site',
+  data_labels: false,
+  tooltip: "test"
+
+  };
+%>
+<% bubble_series = @data_visualization.map do  |category|
+{
+  name: category[0]["cluster"],
+  data: category[0]["itens"].map{ |item| [ item["cx"], item["r"], item["cy"]] }
+}
+end %>
+<%= bubble_chart(bubble_series, options) %>

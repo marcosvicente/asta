@@ -17,6 +17,9 @@ class DataVisualizationsController < ApplicationController
     categories.each do |c|
       @data_visualization << ["cluster" => c, "itens" => DataVisualizationItem.where(cluster: c)]
     end
+    @max =  DataVisualizationItem.where(data_visualization_id: id).max_by
+    @min = DataVisualizationItem.where(data_visualization_id: id).min_by
+    @data_visualization_info
     @data_visualization
   end
 

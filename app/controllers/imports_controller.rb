@@ -27,7 +27,7 @@ class ImportsController < ApplicationController
 
     respond_to do |format|
       if @import.save
-        # DataVisualizationWorker.perform_async(@import.id)
+        DataVisualizationWorker.perform_async(@import.id)
         format.html { redirect_to @import, notice: "Importação foi criado." }
         format.json { render :show, status: :created, location: @import }
       else

@@ -36,6 +36,6 @@ yarn-debug.log*
 .yarn-integrity
 
 
-#import 
+#import
 public/uploads/import/file/*
 public/uploads/tmp/*

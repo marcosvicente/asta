@@ -144,12 +144,11 @@
           </li>
           <li class=" nav-item">
           <%= link_to(data_visualizations_path(locale: I18n.locale), class: "d-flex align-items-center")  do %>
-            <i data-feather="file"></i>
-            <span class="menu-title text-truncate">      
+            <i data-feather="bar-chart"></i>
+            <span class="menu-title text-truncate">
               <%= I18n.t('activerecord.models.data_visualization.other') %>
             </span>
           <% end %>
-           
           </li>
           <% if current_user.kind == "admin" %>
             <li class=" navigation-header">

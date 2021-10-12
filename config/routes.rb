@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
   # sidekiq
-  # require 'sidekiq/web'
-  # mount Sidekiq::Web => '/sidekiq'  
+  require 'sidekiq/web'
+  mount Sidekiq::Web => '/sidekiq'  
 
   resources :data_visualizations, only: %i[ index show ]
   get 'visualizations/:id/', to: 'data_visualizations#visualizations'

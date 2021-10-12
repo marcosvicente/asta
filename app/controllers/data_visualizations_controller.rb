@@ -2,7 +2,7 @@ class DataVisualizationsController < ApplicationController
 
   # GET /data_visualizations or /data_visualizations.json
   def index
-    @data_visualizations = DataVisualization.all
+    @data_visualizations = DataVisualization.order("created_at DESC").page(params[:page]).per(10)
   end
 
   # GET /data_visualizations/1 or /data_visualizations/1.json

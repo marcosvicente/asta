@@ -19,7 +19,7 @@
 {
   # normalizar e de fazer range entre 5 25
   name: category[0]["cluster"],
-  data: category[0]["itens"].map{ |item| [ item["cx"], item["r"], item["cy"]] }
+  data: category[0]["itens"].map{ |item| [ item["cx"], item["cy"], item["r_scale"]] }
 }
 end %>
 <%= bubble_chart(bubble_series, options) %>

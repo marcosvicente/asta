@@ -4,10 +4,10 @@
 
 <% options = {
   title: 'test',
-  xtitle: 'test',
-  ytitle: 'Per site',
+  xtitle: 'x index',
+  ytitle: 'y index',
   data_labels: false,
-  height: 800,
+  height: 500,
 }
 %>
 
@@ -22,4 +22,4 @@
   data: category[0]["itens"].map{ |item| [ item["cx"], item["cy"], item["r_scale"]] }
 }
 end %>
-<%= bubble_chart(bubble_series, options) %>
+<%= bubble_chart(bubble_series, @data_visualization_info) %>

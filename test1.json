@@ -1,0 +1,105 @@
+{
+  "colluns": {
+    "cx": "Gini index",
+    "cy": "Life expect",
+    "r": "Renda per capita",
+    "cluster": "Continente",
+    "data_id": "Pais"
+  },
+  "values": [
+    {
+      "cx": 29, /* [3] */
+      "cy": 78,  /* [1] */
+      "r": 11800,  /* [2] */
+      "cluster": "Europe",  /* [4] */
+      "data_id": "Albania",  /* [0] */
+      "info": [
+        {
+          "column": "homen",
+          "value": 1.90
+        },
+        {
+          "column": "mulher",
+          "value": 1.90
+        }
+      ]
+    },
+    {
+      "cx": 35.3, /* [3] */
+      "cy": 77,  /* [1] */
+      "r": 15000,  /* [2] */
+      "cluster": "North Africa",  /* [4] */
+      "data_id": "Algeria"  /* [0] */
+    },
+    {
+      "cx": 35.3, /* [3] */
+      "cy": 73.4,  /* [1] */
+      "r": 13000,  /* [2] */
+      "cluster": "Oceania",  /* [4] */
+      "data_id": "American Samoa"  /* [0] */
+    },
+    {
+      "cx": 35.3, /* [3] */
+      "cy": 82.9,  /* [1] */
+      "r": 49900,  /* [2] */
+      "cluster": "Europe",  /* [4] */
+      "data_id": "Andorra"  /* [0] */
+    },
+    {
+      "cx": 35.3, /* [3] */
+      "cy": 60.2,  /* [1] */
+      "r": 6800,  /* [2] */
+      "cluster": "Sub-Saharan Africa",  /* [4] */
+      "data_id": "Angola"  /* [0] */
+    },
+    {
+      "cx": 35.3, /* [3] */
+      "cy": 81.5,  /* [1] */
+      "r": 12200,  /* [2] */
+      "cluster": "Caribbean Islands",  /* [4] */
+      "data_id": "Anguilla"  /* [0] */
+    },
+    {
+      "cx": 35.3, /* [3] */
+      "cy": 76.7,  /* [1] */
+      "r": 25200,  /* [2] */
+      "cluster": "Caribbean Islands",  /* [4] */
+      "data_id": "Antigua and Barbuda"  /* [0] */
+    },
+    {
+      "cx": 42.7, /* [3] */
+      "cy": 77.3,  /* [1] */
+      "r": 20000,  /* [2] */
+      "cluster": "South America",  /* [4] */
+      "data_id": "Argentina"  /* [0] */
+    },
+    {
+      "cx": 31.5, /* [3] */
+      "cy": 74.9,  /* [1] */
+      "r": 8600,  /* [2] */
+      "cluster": "West & Central Asia",  /* [4] */
+      "data_id": "Armenia"  /* [0] */
+    },
+    {
+      "cx": 31.5, /* [3] */
+      "cy": 76.9,  /* [1] */
+      "r": 25300,  /* [2] */
+      "cluster": "Caribbean Islands",  /* [4] */
+      "data_id": "Aruba"  /* [0] */
+    },
+    {
+      "cx": 30.3, /* [3] */
+      "cy": 82.3,  /* [1] */
+      "r": 48900,  /* [2] */
+      "cluster": "Oceania",  /* [4] */
+      "data_id": "Australia"  /* [0] */
+    },
+    {
+      "cx": 29.2, /* [3] */
+      "cy": 81.6,  /* [1] */
+      "r": 48000,  /* [2] */
+      "cluster": "Europe",  /* [4] */
+      "data_id": "Austria"  /* [0] */
+    }
+  ]
+}

@@ -7,26 +7,34 @@ class DataVisualizationsController < ApplicationController
 
   # GET /data_visualizations/1 or /data_visualizations/1.json
   def show
-    id = DataVisualization.find(params[:id]).id
+    @data = DataVisualization.find(params[:id])
+  
 
     categories =  DataVisualizationItem.where(
-      data_visualization_id: id
+      data_visualization_id: @data.id
     ).collect(&:cluster).uniq.reject(&:nil?)
 
 
-    @max =  DataVisualizationItem.where(data_visualization_id: id).maximum("r")
-    @min = DataVisualizationItem.where(data_visualization_id: id).minimum("r")
+    @max =  DataVisualizationItem.where(data_visualization_id: @data.id).maximum("r")
+    @min = DataVisualizationItem.where(data_visualization_id: @data.id).minimum("r")
 
     @data_visualization = []
     categories.each do |c|
-      @data_visualization << ["cluster" => c, "itens" => DataVisualizationItem.where(cluster: c, data_visualization_id: id)]
+      @data_visualization << ["cluster" => c, "itens" => DataVisualizationItem.where(cluster: c, data_visualization_id: @data.id)]
     end
 
     
-
     @data_visualization.map do |data|
       data[0]["itens"].map { |value| value["r_scale"] = (r_scale(value["r"], @max, @min))}
     end
+
+      @data_visualization_info = {
+        title: "Data Visulization #{@data.id}",
+        xtitle: @data.cx,
+        ytitle: @data.cy,
+        data_labels: false,
+        height: 500,
+      }
 
     @data_visualization_info
     @data_visualization
@@ -35,6 +43,8 @@ class DataVisualizationsController < ApplicationController
   private 
   
   def r_scale(r, max, min)
-    value = 5 + (((r - min) * (25)) / (max - min))
+    limit_sup = 25
+    limit_inf = 5
+    value = 5 + (((r - min) * (limit_sup - limit_inf)) / (max - min))
   end
 end

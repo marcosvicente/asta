@@ -5,15 +5,14 @@ class DataVisualizationWorker
 
   sidekiq_options retry: 0
   sidekiq_options queue: :visualization
+
   def perform(import_id)
     @import = Import.find(import_id)
-    @import.status = :processing
-    @import.save!
-    # binding.pry
-    # Ler o arquivo
-    data_hash = JSON.parse(File.read(import.file.path))
+    change_status(@import, :processing)
 
     # binding.pry
+    # read the file
+    data_hash = JSON.parse(File.read(import.file.path))
 
     visualization = DataVisualization.new(
       cx: data_hash["colluns"]["cx"],
@@ -26,6 +25,7 @@ class DataVisualizationWorker
     unless visualization.save!
       error = Import.find(import_id)
       error.message = "Visualizaion out patther"
+      change_status(@import, :error)
     else
       data_hash["values"].collect do |v|
         item = DataVisualizationItem.new(
@@ -41,19 +41,26 @@ class DataVisualizationWorker
           error.message = "VisualizaionItem out patther"
         else
           # binding.pry
-          v["info"].collect do |i|
-            info = DataVisualizationInfo.new(
-              column: i["collun"],
-              value: i["value"],
-              data_visualization_item_id: item.id
-            )
-            info.save!
+          unless v["info"].nil?
+            v["info"].collect do |i|
+              info = DataVisualizationInfo.new(
+                column: i["collun"],
+                value: i["value"],
+                data_visualization_item_id: item.id
+              )
+              info.save!
+            end
           end
         end
-        @import.status = :done
-        @import.save!
+        change_status(@import, :done)
       end
 
     end
+  end
+
+  private 
+  def change_status(import, kind)
+    import.status = kind
+    import.save!
   end
 end

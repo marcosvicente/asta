@@ -10,7 +10,6 @@ class DataVisualizationWorker
     @import = Import.find(import_id)
     change_status(@import, :processing)
 
-    # binding.pry
     # read the file
     data_hash = JSON.parse(File.read(import.file.path))
 

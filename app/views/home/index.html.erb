@@ -1,12 +1,61 @@
+<% if current_user.kind == "admin" %>
+<div class="card card-statistics">
+  <div class="card-header">
+    <h4 class="card-title">
+      <%= I18n.t('views.home.statistic') %>
+    </h4>
+  </div>
+  <div class="card-body statistics-body">
+    <div class="row">
+    <div class="col-xl-3 col-sm-6 col-12 mb-2 mb-xl-0">
+          <div class="d-flex flex-row">
+              <div class="avatar bg-light-info me-2">
+                  <div class="avatar-content">
+                      <i data-feather="user" class="avatar-icon"></i>
+                  </div>
+              </div>
+              <div class="my-auto">
+                  <h4 class="fw-bolder mb-0"><%= User.count %></h4>
+                  <p class="card-text font-small-3 mb-0">
+                    <%= I18n.t('activerecord.models.user.other') %>
+                  </p>
+              </div>
+          </div>
+      </div>
+      <div class="col-xl-3 col-sm-6 col-8 mb-2 mb-xl-0">
+          <div class="d-flex flex-row">
+              <div class="avatar bg-light-primary me-2">
+                  <div class="avatar-content">
+                      <i data-feather="bar-chart" class="avatar-icon"></i>
+                  </div>
+              </div>
+              <div class="my-auto">
+                  <h4 class="fw-bolder mb-0"><%= DataVisualization.count %></h4>
+                  <p class="card-text font-small-3 mb-0">
+                    <%= I18n.t('activerecord.models.data_visualization.other') %>
 
-<div class="button-wrap">
-  <button class="btn btn-hide" id="btn">
-    <%= t('show_visualization_btn') %>
-  </button>
+                  </p>
+              </div>
+          </div>
+      </div>
+      
+      <div class="col-xl-3 col-sm-6 col-12 mb-2 mb-sm-0">
+          <div class="d-flex flex-row">
+              <div class="avatar bg-light-danger me-2">
+                  <div class="avatar-content">
+                      <i data-feather="file" class="avatar-icon"></i>
+                  </div>
+              </div>
+              <div class="my-auto">
+                  <h4 class="fw-bolder mb-0"><%= Import.count %></h4>
+                  <p class="card-text font-small-3 mb-0">
+                    <%= I18n.t('activerecord.models.import.other') %>
+                  </p>
+              </div>
+          </div>
+      </div>
+    </div>
+  </div>
 </div>
-
-<div class="cluster"></div>
-
-<script src="https://d3js.org/d3.v4.min.js"></script>
-<%= javascript_include_tag 'd3.tip.js' %>
-<%= javascript_include_tag 'btn_grafic.js' %>
+<% end %>
+<!--/ Statistics Card -->

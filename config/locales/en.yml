@@ -79,6 +79,8 @@ en:
     change_language: Change our language
     profile: Profile
     logout: Logout
+    home:
+      statistic: Statistics
     import: 
       lasted: Lasted Importation
       not: No Importation

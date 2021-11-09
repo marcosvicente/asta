@@ -79,6 +79,8 @@ pt-BR:
     change_language: Mudar a lingua
     profile: Perfil
     logout: Sair
+    home:
+      statistic: Statistics
     import: 
       lasted: Ultimas Importações
       not: Sem Importações

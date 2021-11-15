@@ -65,12 +65,36 @@
 </div>
 
 
+<script>
+Apex.tooltip =  {
+    custom: function({series, seriesIndex, dataPointIndex, w}) {
+      var data = w.globals.initialSeries[seriesIndex].data[dataPointIndex];
+      console.log(w.globals);
+      console.log(dataPointIndex);
+      console.log(data)
+      console.log(data[3]["info"][0])
 
+      return '<ul>' +
+      '<li><b>CX</b>: ' + data[0] + '</li>' +
+      '<li><b>CY</b>: ' + data[1] + '</li>' +
+      '<li><b>Value Buble</b>: \'' + data[2] + '\'</li>' +
+      '<li><b>Info</b>: \'' + data[3]["info"][0]["value"] + '\'</li>' +
+      '</ul>';
+    }
+  }
+</script>
 
 <% bubble_series = @data_visualization.map do |category|
 {
   name: category[0]["cluster"],
-  data: category[0]["itens"].map{ |item| [ item["cx"].to_f, item["cy"].to_f, item["r_scale"]] }
+  data: category[0]["itens"].map{ |item| [ 
+    item["cx"].to_f, 
+    item["cy"].to_f, 
+    item["r_scale"],
+    r:  item["r"],
+    id: item["id"],
+    info: DataVisualizationInfo.where(data_visualization_item: item["id"])
+  ]}
 }
 end %>
-<%= bubble_chart(bubble_series, @data_visualization_info) %>
+<%= bubble_chart(bubble_series, @data_visualization_columns) %>

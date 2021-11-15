@@ -32,7 +32,7 @@ class DataVisualizationsController < ApplicationController
       data[0]["itens"].map { |value| value["r_scale"] = (r_scale(value["r"], @max, @min))}
     end
 
-    @data_visualization_info = {
+    @data_visualization_columns = {
       title: title,
       xtitle: @data.cx,
       ytitle: @data.cy,

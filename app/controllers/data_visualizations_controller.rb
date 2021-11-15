@@ -8,7 +8,11 @@ class DataVisualizationsController < ApplicationController
   # GET /data_visualizations/1 or /data_visualizations/1.json
   def show
     @data = DataVisualization.find(params[:id])
-    title = Import.find(@data.import_id).name
+    @import = Import.find(@data.import_id)
+
+    title = @import.name
+
+    @cluster_info = ClusterInfo.where(import_id: @import.id).last
 
     @data_item = DataVisualizationItem.where( data_visualization_id: @data.id)
 

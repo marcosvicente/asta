@@ -1,5 +1,72 @@
 <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
 
+<div class="card card-statistics">
+  <div class="card-header">
+    <h4 class="card-title">
+      <%= I18n.t('activerecord.models.cluster_info.outher') %>
+    </h4>
+  </div>
+  <div class="card-body statistics-body">
+    <div class="row">
+    <div class="col-xl-3 col-sm-6 col-12 mb-2 mb-xl-0">
+          <div class="d-flex flex-row">
+              <div class="avatar bg-light-primary me-2">
+                  <div class="avatar-content">
+                      <i data-feather="user" class="avatar-icon"></i>
+                  </div>
+              </div>
+              <div class="my-auto">
+                  <h4 class="fw-bolder mb-0">
+                    <%= I18n.t('activerecord.attributes.cluster_info.data_sets') %>
+                  </h4>
+                  <p class="card-text font-small-3 mb-0">
+                    <%= @cluster_info.data_sets %>
+                  </p>
+              </div>
+          </div>
+      </div>
+      <div class="col-xl-3 col-sm-6 col-8 mb-2 mb-xl-0">
+          <div class="d-flex flex-row">
+              <div class="avatar bg-light-primary me-2">
+                  <div class="avatar-content">
+                      <i data-feather="bar-chart" class="avatar-icon"></i>
+                  </div>
+              </div>
+              <div class="my-auto">
+                  <h4 class="fw-bolder mb-0">
+                    <%= I18n.t('activerecord.attributes.cluster_info.algorithm') %>
+                  </h4>
+                  <p class="card-text font-small-3 mb-0">
+                    <%= @cluster_info.algorithm %>
+                  </p>
+              </div>
+          </div>
+      </div>
+      
+      <div class="col-xl-3 col-sm-6 col-12 mb-2 mb-sm-0">
+          <div class="d-flex flex-row">
+              <div class="avatar bg-light-primary me-2">
+                  <div class="avatar-content">
+                      <i data-feather="file" class="avatar-icon"></i>
+                  </div>
+              </div>
+              <div class="my-auto">
+                  <h4 class="fw-bolder mb-0">
+                    <%= I18n.t('activerecord.attributes.cluster_info.description') %>
+                  </h4>
+                  <p class="card-text font-small-3 mb-0">
+                    <%= @cluster_info.description %>
+                  </p>
+              </div>
+          </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
 <% bubble_series = @data_visualization.map do |category|
 {
   name: category[0]["cluster"],

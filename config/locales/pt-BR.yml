@@ -3,6 +3,9 @@ pt-BR:
   show_visualization_btn: "Ver todos os continentes"
   activerecord:
     models:
+      cluster_info:
+        one: Agrupamento 
+        outher: Agrupamentos
       user:       
         one: Usuário
         other: Usuários
@@ -16,6 +19,11 @@ pt-BR:
       timestamp: &timestamp
         created_at: Criado em
         updated_at: Atualizado em
+      cluster_info:
+        data_sets: Conjunto de dados
+        algorithm: Algoritimos
+        description: Descrição
+        import: Importação
       import: 
         status: Status
         statuses:
@@ -25,7 +33,7 @@ pt-BR:
         file: Arquivo
         user_id: Usuário
         user: Usuário
-        name: Nome
+        name: Nome da Importação
       user: 
         kind: Tipo
         kinds:

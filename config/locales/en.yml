@@ -3,6 +3,9 @@ en:
   show_visualization_btn: Show all continents
   activerecord:
     models:
+      cluster_info:
+        one: Cluster 
+        outher: Clusters
       user:       
         one: User
         other: Users
@@ -16,6 +19,11 @@ en:
       timestamp: &timestamp
         created_at: Created at
         updated_at: Updated at
+      cluster_info:
+        data_sets: Data Sets
+        algorithm: Algorithm
+        description: Description
+        import: Import
       import: 
         status: Status
         statuses:
@@ -25,7 +33,7 @@ en:
         file: File
         user_id: User
         user: User
-        name: Name
+        name: Name of import
       user: 
         kind: Kind
         kinds:

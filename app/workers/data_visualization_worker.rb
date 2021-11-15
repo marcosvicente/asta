@@ -1,3 +1,5 @@
+require 'bigdecimal'
+
 class DataVisualizationWorker
   include Sidekiq::Worker
 
@@ -28,9 +30,9 @@ class DataVisualizationWorker
     else
       data_hash["values"].collect do |v|
         item = DataVisualizationItem.new(
-          cx: v["cx"],
-          cy: v["cy"],
-          r: v["r"],
+          cx: v["cx"].to_d,
+          cy: v["cy"].to_d,
+          r: v["r"].to_d,
           cluster: v["cluster"],
           data_id: v["data_id"],
           data_visualization_id: visualization.id

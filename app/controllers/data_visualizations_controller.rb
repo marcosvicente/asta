@@ -10,6 +10,8 @@ class DataVisualizationsController < ApplicationController
     @data = DataVisualization.find(params[:id])
     title = Import.find(@data.import_id).name
 
+    @data_item = DataVisualizationItem.where( data_visualization_id: @data.id)
+
     categories =  DataVisualizationItem.where(
       data_visualization_id: @data.id
     ).collect(&:cluster).uniq.reject(&:nil?)
@@ -26,13 +28,13 @@ class DataVisualizationsController < ApplicationController
       data[0]["itens"].map { |value| value["r_scale"] = (r_scale(value["r"], @max, @min))}
     end
 
-      @data_visualization_info = {
-        title: title,
-        xtitle: @data.cx,
-        ytitle: @data.cy,
-        data_labels: false,
-        height: 500,
-      }
+    @data_visualization_info = {
+      title: title,
+      xtitle: @data.cx,
+      ytitle: @data.cy,
+      data_labels: false,
+      height: 500,
+    }
 
     @data_visualization_info
     @data_visualization

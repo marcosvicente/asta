@@ -51,6 +51,8 @@ gem 'sprockets', '~> 4'
 gem 'sprockets-rails', :require => 'sprockets/railtie'
 gem 'rack-cors'
 gem 'apexcharts'
+# use to run json in apexcharts
+gem 'functionable-json'
 gem 'groupdate'
 gem "chartkick"
 

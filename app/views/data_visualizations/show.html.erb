@@ -1,12 +1,9 @@
 <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
 
-<%# <div class="cluster" data-id="<%= @data_visualization.id"></div> %>
-
 <% bubble_series = @data_visualization.map do |category|
 {
-  # normalizar e de fazer range entre 5 25
   name: category[0]["cluster"],
-  data: category[0]["itens"].map{ |item| [ item["cx"], item["cy"], item["r_scale"]] }
+  data: category[0]["itens"].map{ |item| [ item["cx"].to_f, item["cy"].to_f, item["r_scale"]] }
 }
 end %>
 <%= bubble_chart(bubble_series, @data_visualization_info) %>

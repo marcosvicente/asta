@@ -74,10 +74,10 @@ Apex.tooltip =  {
       console.log(data)
       console.log(data[3]["info"][0])
 
-      return '<ul>' +
+      return '<ul class="arrow_box">' +
       '<li><b>CX</b>: ' + data[0] + '</li>' +
       '<li><b>CY</b>: ' + data[1] + '</li>' +
-      '<li><b>Value Buble</b>: \'' + data[2] + '\'</li>' +
+      '<li><b>Value Buble</b>: ' + data[3]["r"] + '</li>' +
       '<li><b>Info</b>: \'' + data[3]["info"][0]["value"] + '\'</li>' +
       '</ul>';
     }

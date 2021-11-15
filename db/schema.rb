@@ -10,10 +10,22 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_09_26_130616) do
+ActiveRecord::Schema.define(version: 2021_11_15_131533) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "cluster_infos", force: :cascade do |t|
+    t.string "data_sets"
+    t.string "algorithm"
+    t.text "description"
+    t.bigint "import_id", null: false
+    t.bigint "type_algorithm_id", null: false
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.index ["import_id"], name: "index_cluster_infos_on_import_id"
+    t.index ["type_algorithm_id"], name: "index_cluster_infos_on_type_algorithm_id"
+  end
 
   create_table "data_visualization_infos", force: :cascade do |t|
     t.string "column"
@@ -59,6 +71,12 @@ ActiveRecord::Schema.define(version: 2021_09_26_130616) do
     t.index ["user_id"], name: "index_imports_on_user_id"
   end
 
+  create_table "type_algorithms", force: :cascade do |t|
+    t.string "name"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+  end
+
   create_table "users", force: :cascade do |t|
     t.string "email", default: "", null: false
     t.string "encrypted_password", default: "", null: false
@@ -72,6 +90,8 @@ ActiveRecord::Schema.define(version: 2021_09_26_130616) do
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
   end
 
+  add_foreign_key "cluster_infos", "imports"
+  add_foreign_key "cluster_infos", "type_algorithms"
   add_foreign_key "data_visualization_infos", "data_visualization_items"
   add_foreign_key "data_visualization_items", "data_visualizations"
   add_foreign_key "data_visualizations", "imports"

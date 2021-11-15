@@ -13,6 +13,7 @@ class ImportsController < ApplicationController
   # GET /imports/new
   def new
     @import = Import.new
+    @cluster_info = ClusterInfo.new
   end
 
   # GET /imports/1/edit
@@ -21,12 +22,24 @@ class ImportsController < ApplicationController
 
   # POST /imports or /imports.json
   def create
-    @import = Import.new(import_params)
+    @import = Import.new(
+      file: import_params["file"],
+      name: import_params["name"]
+    )
     @import.user_id =  current_user.id
     @import.status = 0
 
     respond_to do |format|
       if @import.save
+        @cluster_info = ClusterInfo.new(
+          data_sets: import_params["cluster_info"]["data_sets"],
+          algorithm: import_params["cluster_info"]["algorithm"],
+          description: import_params["cluster_info"]["description"],
+          type_algorithm_id: import_params["cluster_info"]["type_algorithm_id"]
+        )
+        @cluster_info.import_id = @import.id
+        @cluster_info.save!
+
         DataVisualizationWorker.perform_async(@import.id)
         format.html { redirect_to @import, notice: "Importação foi criado." }
         format.json { render :show, status: :created, location: @import }
@@ -68,6 +81,15 @@ class ImportsController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def import_params
-      params.require(:import).permit(:file, :name)
+      params.require(:import).permit(
+        :file,
+        :name, 
+        cluster_info: [
+          :data_sets,
+          :algorithm,
+          :description,
+          :type_algorithm_id
+        ]
+      )
     end
 end

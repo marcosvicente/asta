@@ -24,3 +24,15 @@ user.save(validate: false)
   )
   user.save(validate: false)
 end 
+
+user = User.new(
+  email: '@email.com', 
+  password: '123456789', 
+  password_confirmation: '123456789',
+  kind: :commom
+)
+user.save(validate: false)
+
+
+TypeAlgorithm.create(name: "Particional")
+TypeAlgorithm.create(name: "Hierarquicol")

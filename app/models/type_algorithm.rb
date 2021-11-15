@@ -1,0 +1,2 @@
+class TypeAlgorithm < ApplicationRecord
+end

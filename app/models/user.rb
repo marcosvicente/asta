@@ -4,7 +4,6 @@ class User < ApplicationRecord
   devise :database_authenticatable, :registerable,
           :recoverable, :rememberable, :validatable
 
-  validate :update_create_when_admin
   validates :email, uniqueness: true
   enum kind: [:commom, :admin]
 
@@ -14,7 +13,4 @@ class User < ApplicationRecord
     User.human_enum_name(:kind, self.kind) if self.kind
   end
 
-  def update_create_when_admin
-    errors.add(:kind, "not be save!") != :admin if self.kind 
-  end
 end

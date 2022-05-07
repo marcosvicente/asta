@@ -13,6 +13,7 @@ module Asta
     config.eager_load_paths << Rails.root.join('lib')
     config.assets.check_precompiled_asset = false
     config.active_job.queue_adapter = :sidekiq
+    config.action_cable.mount_path = '/cable'
 
     # Configuration for the application, engines, and railties goes here.
     #

@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_11_15_131533) do
+ActiveRecord::Schema.define(version: 2022_04_24_190547) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -71,6 +71,16 @@ ActiveRecord::Schema.define(version: 2021_11_15_131533) do
     t.index ["user_id"], name: "index_imports_on_user_id"
   end
 
+  create_table "messages", force: :cascade do |t|
+    t.text "content", null: false
+    t.bigint "user_id", null: false
+    t.bigint "data_visualization_id", null: false
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.index ["data_visualization_id"], name: "index_messages_on_data_visualization_id"
+    t.index ["user_id"], name: "index_messages_on_user_id"
+  end
+
   create_table "type_algorithms", force: :cascade do |t|
     t.string "name"
     t.datetime "created_at", precision: 6, null: false
@@ -96,4 +106,6 @@ ActiveRecord::Schema.define(version: 2021_11_15_131533) do
   add_foreign_key "data_visualization_items", "data_visualizations"
   add_foreign_key "data_visualizations", "imports"
   add_foreign_key "imports", "users"
+  add_foreign_key "messages", "data_visualizations"
+  add_foreign_key "messages", "users"
 end

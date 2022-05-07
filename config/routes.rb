@@ -14,4 +14,5 @@ Rails.application.routes.draw do
   resources :imports
   
   root to: "home#index"
+  resources :messages, only: %i[ create ]
 end

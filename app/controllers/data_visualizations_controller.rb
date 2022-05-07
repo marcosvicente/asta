@@ -42,6 +42,8 @@ class DataVisualizationsController < ApplicationController
 
     @data_visualization_info
     @data_visualization
+
+    message
   end
 
   private 
@@ -49,5 +51,9 @@ class DataVisualizationsController < ApplicationController
     limit_sup = 25
     limit_inf = 5
     value = 5 + (((r - min) * (limit_sup - limit_inf)) / (max - min))
+  end
+  
+  def message
+    @messages = Message.where(user_id: current_user, data_visualization_id: params[:id])
   end
 end

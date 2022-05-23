@@ -56,6 +56,8 @@ gem 'functionable-json'
 gem 'groupdate'
 gem "chartkick"
 
+
+gem 'stamp' #date
 group :development, :test do
   gem 'pry-byebug'
 

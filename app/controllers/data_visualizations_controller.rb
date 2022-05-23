@@ -54,6 +54,6 @@ class DataVisualizationsController < ApplicationController
   end
   
   def message
-    @messages = Message.where(user_id: current_user, data_visualization_id: params[:id])
+    @messages = Message.where(data_visualization_id: params[:id])
   end
 end

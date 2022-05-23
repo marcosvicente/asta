@@ -99,33 +99,43 @@ Apex.tooltip =  {
 end %>
 <%= bubble_chart(bubble_series, @data_visualization_columns) %>
 
+<div class="chat">
+  <div class="messages-list-block">
+    <% for message in @messages %>
+      <% if message.user_id == current_user.id %>
+      <div class="current_user">
+        <span class="message-email message-email-current-user">
+          <%= message.user.email %>
+          -
+          <span class=""><%= message.created_at.to_datetime.to_s(:short)%></span>
+        </span>
+        <p class="message-item message-item-current-user"><%= message.content %></p>
+      </div>
+      <% else %>
+      <div class="outhers_user">
+        <span class="message-email">
+          <%= message.user.email %>
+          -
+          <span class=""><%= message.created_at.to_datetime.to_s(:short) %></span>
+        </span>
+        <p class="message-item"><%= message.content %></p>
+      </div>
+      <% end %>
+    <% end %>
+  </div>
+  <div class="messages-list-footer">
+    <%= form_with model: Message, url: messages_path, local: true,  remote: true, id: 'new-message-form' do  |f| %>
+    <%= csrf_meta_tags %>
+      <%= f.hidden_field :data_visualization_id, value: params[:id] %>
 
-<hr />
-<hr />
-<hr />
-<hr />
-<hr />
-<hr />
-<hr />
-
-<div id="messages-list">
-  <% for message in @messages %>
-    <p><%= message.content %></p>
-  <% end %>
+      <%= f.text_field :content %>
+      <button type="submit" id="message_btn" onclick="send_msn">Send Message</button>
+    <% end %>
+  </div>
 </div>
 
-
-<%= form_with model: Message, url: messages_path, local: true,  remote: true, id: 'new-message-form' do  |f| %>
-<%= csrf_meta_tags %>
-  <%= f.hidden_field :data_visualization_id, value: params[:id] %>
-
-  <%= f.text_field :content %>
-  <button type="submit" id="message_btn">Send Message</button>
-<% end %>
-
-
 <script>
-  const btn = document.getElementById("message_btn");
-  
+function send_msn() {
+  document.getElementById("message-content").value = "";
+}
 </script>
-

@@ -1,3 +1,70 @@
 // Place all the styles related to the Chat controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: https://sass-lang.com/
+
+.chat{
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+  border: 1px solid #d1d1d1;
+  .messages-list-block{
+    padding: 20px 40px;
+    height: 100%;
+    max-height: 500px;
+    overflow-y: auto;
+    .current_user{
+      text-align: right;
+      margin-top: 32px;
+    }
+    .outher_user{
+      margin-top: 32px;
+    }
+    .message-item{
+      background-color: #f1f1f1 ;
+      display: inline-flex;
+      position: relative;
+      padding:5px 20px;
+      border-radius: 15px;
+      margin-top: 15px;
+      margin-bottom: 0px;
+    }
+    .message-email{
+      color: #d1d1d1;
+      display: block;
+      margin-left: 12px;
+    }
+    .message-item-current-user{ 
+      background-color: rgb(0, 132, 255) !important;
+      text-align: right;
+      color: #fff;
+    }
+    .message-email-current-user{
+      text-align: right;
+      margin-left: 0;
+      margin-right: 12px;
+    }
+    
+  }
+  .messages-list-footer{
+    border-top: 1px solid #d1d1d1;
+    padding: 0px 40px 20px;
+    #new-message-form{
+      margin-top: 20px;
+      input[type="text"]{
+        background-color: #f3f3f3;
+        color: #444;
+        border-radius: 15px;
+        border: 1px solid #d1d1d1;
+        width: 763px;
+        padding: 5px 23px;
+      }
+      button{
+        background-color:  rgb(0, 132, 255);
+        color: #fff;
+        border: none;
+        border-radius: 15px;
+        padding:5px 20px;
+      }
+    }
+  }
+}

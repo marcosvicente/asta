@@ -103,20 +103,20 @@ end %>
   <div class="messages-list-block">
     <% for message in @messages %>
       <% if message.user_id == current_user.id %>
-      <div class="current_user">
+      <div class="current_user messages-list">
         <span class="message-email message-email-current-user">
           <%= message.user.email %>
           -
-          <span class=""><%= message.created_at.to_datetime.to_s(:short)%></span>
+          <span class=""><%= message.created_at.to_datetime.to_s(:short) %></span>
         </span>
         <p class="message-item message-item-current-user"><%= message.content %></p>
       </div>
       <% else %>
-      <div class="outhers_user">
+      <div class="outhers_user messages-list">
         <span class="message-email">
           <%= message.user.email %>
           -
-          <span class=""><%= message.created_at.to_datetime.to_s(:short) %></span>
+          <span class=""><%= message.created_at.to_datetime.to_s(:short)%></span>
         </span>
         <p class="message-item"><%= message.content %></p>
       </div>
@@ -125,17 +125,44 @@ end %>
   </div>
   <div class="messages-list-footer">
     <%= form_with model: Message, url: messages_path, local: true,  remote: true, id: 'new-message-form' do  |f| %>
-    <%= csrf_meta_tags %>
+      <%= csrf_meta_tags %>
       <%= f.hidden_field :data_visualization_id, value: params[:id] %>
 
       <%= f.text_field :content %>
-      <button type="submit" id="message_btn" onclick="send_msn">Send Message</button>
+      <button type="submit" id="message_btn">Send Message</button>
     <% end %>
   </div>
 </div>
 
 <script>
-function send_msn() {
-  document.getElementById("message-content").value = "";
-}
+  document.addEventListener("DOMContentLoaded", function(event) {     
+
+    document.getElementById("message_btn").onclick = function() {
+      addMessage()
+    }; 
+  });
+
+
+  function sendMessage() {
+    const content = document.getElementById("message_content").value;
+    return content;
+  }
+
+  function addMessage(){
+    const content = sendMessage();
+    const message = document.getElementsByClassName("messages-list-block")[0].lastElementChild;
+    let data = `
+        <div class="current_user">
+        <span class="message-email message-email-current-user">
+          <%= current_user.email %>
+          -
+          <span class=""></span>
+        </span>
+        <p class="message-item message-item-current-user">${content}</p>
+      </div>
+      `
+    console.log(message);
+    console.log(data)
+    message.insertAdjacentHTML("afterend", data);
+  }
 </script>

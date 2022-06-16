@@ -136,7 +136,6 @@ end %>
 
 <script>
   document.addEventListener("DOMContentLoaded", function(event) {     
-
     document.getElementById("message_btn").onclick = function() {
       addMessage()
     }; 
@@ -148,21 +147,37 @@ end %>
     return content;
   }
 
-  function addMessage(){
-    const content = sendMessage();
-    const message = document.getElementsByClassName("messages-list-block")[0].lastElementChild;
-    let data = `
-        <div class="current_user">
-        <span class="message-email message-email-current-user">
-          <%= current_user.email %>
-          -
-          <span class=""></span>
-        </span>
-        <p class="message-item message-item-current-user">${content}</p>
-      </div>
-      `
-    console.log(message);
-    console.log(data)
-    message.insertAdjacentHTML("afterend", data);
+  function cleanMessage() {
+    const content = document.getElementById("message_content").value = '';
   }
+
+  function updateScroll(){
+    var scrolled = false;
+    if(!scrolled){
+        var element = document.getElementsByClassName("messages-list-block")[0];
+        element.scrollTop = element.scrollHeight;
+    }
+  }
+  function addMessage(){
+    let content = sendMessage();
+    console.log(content);
+    if (content !== '') {
+      const message = document.getElementsByClassName("messages-list-block")[0].lastElementChild;
+      let data = `
+          <div class="current_user">
+          <span class="message-email message-email-current-user">
+            <%= current_user.email %>
+            -
+            <span class=""></span>
+          </span>
+          <p class="message-item message-item-current-user">${content}</p>
+        </div>
+        `
+      message.insertAdjacentHTML("afterend", data);
+      updateScroll()
+      // cleanMessage()
+    }
+  }
+  
+
 </script>

@@ -7,7 +7,6 @@ class MessagesController < ApplicationController
     if @message.save
       Rails.logger.info "create Message"
     else
-      format.html { render :edit, status: :unprocessable_entity }
       format.json { render json: @message.errors, status: :unprocessable_entity }
     end
   end

@@ -1,7 +1,6 @@
 <% if notice.present? %>
   <div class="alert alert-primary" role="alert">
     <div class="alert-body">
-      <%# <%= notice %> %>
     </div>
   </div>
 <% end %>
@@ -48,7 +47,7 @@
               <div class="col-md-12 ">
                 <div class="field mb-2">
                   <%= f.button :submit,  class:"btn btn-primary waves-effect waves-float waves-light" do %>
-                  <%= I18n.t('views.edit') %>
+                  <%= I18n.t('views.save') %>
                   <% end%>
                 </div>
               </div>

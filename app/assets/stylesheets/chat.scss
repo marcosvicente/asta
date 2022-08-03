@@ -7,6 +7,11 @@
   max-width: 1000px;
   margin: 0 auto;
   border: 1px solid #d1d1d1;
+  
+  .message-info{
+    text-align: center;
+    display: block;
+  }
   .messages-list-block{
     padding: 20px 40px;
     height: 500px;

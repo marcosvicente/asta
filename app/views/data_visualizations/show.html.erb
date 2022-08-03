@@ -101,6 +101,7 @@ end %>
 
 <div class="chat">
   <div class="messages-list-block">
+  <span class="message-info">Digite suas messagens aqui </span>
     <% for message in @messages %>
       <% if message.user_id == current_user.id %>
       <div class="current_user messages-list">
@@ -175,7 +176,7 @@ end %>
         `
       message.insertAdjacentHTML("afterend", data);
       updateScroll()
-      // cleanMessage()
+      // setTimeout(cleanMessage(), 5000);
     }
   }
   

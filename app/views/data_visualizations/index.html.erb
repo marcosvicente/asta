@@ -19,12 +19,14 @@
         </thead>
         <tbody>
           <% @data_visualizations.each do |data_visualization| %>
-            <tr>
-              <td><%= Import.find(data_visualization.import_id).name %></td>
+            <% unless Import.find(data_visualization.import_id).arquived === true %>
+              <tr>
+                <td><%= Import.find(data_visualization.import_id).name %></td>
 
-              <td><%= data_visualization.import_id %></td>
-              <td><%= link_to 'Show', data_visualization %></td>
-            </tr>
+                <td><%= data_visualization.import_id %></td>
+                <td><%= link_to 'Show', data_visualization %></td>
+              </tr>
+            <% end %>
           <% end %>
         </tbody>
       </table>

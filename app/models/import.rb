@@ -1,10 +1,32 @@
+# == Schema Information
+#
+# Table name: imports
+#
+#  id         :bigint           not null, primary key
+#  arquived   :boolean          default(FALSE)
+#  file       :string
+#  message    :text
+#  name       :string
+#  status     :integer          default("enqueued")
+#  created_at :datetime         not null
+#  updated_at :datetime         not null
+#  user_id    :bigint           not null
+#
+# Indexes
+#
+#  index_imports_on_user_id  (user_id)
+#
+# Foreign Keys
+#
+#  fk_rails_...  (user_id => users.id)
+#
 class Import < ApplicationRecord
   belongs_to :user
 
   validates :status, :name, presence: true
 
   enum status: [:enqueued, :processing, :done, :error]
-
+  has_many :data_visualization
   # carrierwave
   mount_uploader :file, ImportUploader
 

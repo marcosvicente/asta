@@ -49,9 +49,8 @@
                <% if current_user.kind == "admin" || import.user_id == current_user.id %>
                 <td><%= link_to I18n.t('views.edit'), edit_import_path(import) %></td>
               
-                <td><%= link_to I18n.t('views.destroy'), import, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+                <td><%= link_to I18n.t('views.destroy'), controller: "imports", action: "arquived", id: import%></td>
               <% end %>
-
             </tr>
           <% end %>
         </tbody>
@@ -70,3 +69,9 @@
 
 
 
+<script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+<script>
+$('.delete_post').bind('ajax:success', function() {
+    $(this).closest('tr').fadeOut();
+});
+</script>

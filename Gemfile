@@ -57,6 +57,7 @@ gem 'groupdate'
 gem "chartkick"
 
 gem 'momentjs-rails'
+gem 'annotate'
 
 gem 'stamp' #date
 group :development, :test do

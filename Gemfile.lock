@@ -70,6 +70,9 @@ GEM
       zeitwerk (~> 2.3)
     addressable (2.8.0)
       public_suffix (>= 2.0.2, < 5.0)
+    annotate (3.2.0)
+      activerecord (>= 3.2, < 8.0)
+      rake (>= 10.4, < 14.0)
     apexcharts (0.1.11)
       dry-schema (~> 1.5)
       smart_kv (~> 0.2.8)
@@ -346,6 +349,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  annotate
   apexcharts
   bootsnap (>= 1.4.4)
   bootstrap (>= 5.0.2)

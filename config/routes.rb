@@ -12,7 +12,8 @@ Rails.application.routes.draw do
     resources :users
   end
   resources :imports
-  
+  get 'imports/:id/arquived', to: 'imports#arquived'
+
   root to: "home#index"
   resources :messages, only: %i[ create ]
 end

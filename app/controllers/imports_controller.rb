@@ -1,9 +1,9 @@
 class ImportsController < ApplicationController
-  before_action :set_import, only: %i[ show edit update destroy ]
+  before_action :set_import, only: %i[ show edit update ]
 
   # GET /imports or /imports.json
   def index
-    @imports = Import.order("created_at DESC").page(params[:page]).per(10)
+    @imports = Import.order("created_at DESC").where(arquived: false).page(params[:page]).per(10)
   end
 
   # GET /imports/1 or /imports/1.json
@@ -64,15 +64,17 @@ class ImportsController < ApplicationController
     end
   end
 
-  # DELETE /imports/1 or /imports/1.json
-  def destroy
-    @import.destroy
-    respond_to do |format|
-      format.html { redirect_to imports_url, notice: "Import was successfully destroyed." }
-      format.json { head :no_content }
+  def arquived
+    unless params[:id].nil?
+      import = Import.find(params[:id])
+      import.arquived = true
+      import.save
+      redirect_to import, notice: "Importação foi arquivada."
+    else
+      render :edit, status: :unprocessable_entity
     end
   end
-
+  
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_import

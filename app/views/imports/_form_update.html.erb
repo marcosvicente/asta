@@ -1,0 +1,81 @@
+<div >
+  <div class="row">
+      <div class="col-12">
+        <div class="card">
+          <div class="card-header">
+          </div>
+          <div class="card-body">
+            <div class="row">
+              <%= form_with(model: import) do |form| %>
+                <% if import.errors.any? %>
+                  <div class="alert alert-danger" role="alert">
+                    <div class="alert-body">
+                      <span>
+                        <%= pluralize(import.errors.count, "error") %> prohibited this import from being saved:
+                      </span>
+                    </div>
+                    </div>
+                    <% import.errors.each do |error| %>
+                      <div class="alert alert-danger" role="alert">
+                        <div class="alert-body">
+                          <span>
+                            <%= error.full_message %>
+                          </span>
+                        </div>
+                      </div>
+                      <% end %>
+                    <% end %>
+                  <div class="col-sm-12 col-12">
+                    <div class="field mb-2">
+                      <%= form.label :file, class: "form-label" %>
+                      <%= form.file_field :file, class: "form-control" %>
+                    </div>
+                  </div>
+                  <div class="col-sm-12 col-12">
+                    <div class="field mb-2">
+                      <%= form.label :name, class: "form-label" %>
+                      <%= form.text_field :name, class: "form-control" %>
+                    </div>
+                  </div>
+                 
+
+                  <%= form.fields_for :cluster_info do |cluster_info| %>
+                    <div class="col-sm-12 col-12">
+                      <div class="field mb-2">
+                        <%= cluster_info.label :data_sets, class: "form-label" %>
+                        <%= cluster_info.text_field :data_sets, class: "form-control" %>
+                      </div>
+                    </div>
+                    <div class="col-sm-12 col-12">
+                      <div class="field mb-2">
+                        <%= cluster_info.label :algorithm, class: "form-label" %>
+                        <%= cluster_info.text_field :algorithm, class: "form-control" %>
+                      </div>
+                    </div>
+                    <div class="col-sm-12 col-12">
+                      <div class="field mb-2">
+                        <%= cluster_info.label :description, class: "form-label" %>
+                        <%= cluster_info.text_area :description, class: "form-control" %>
+                      </div>
+                    </div><div class="col-sm-12 col-12">
+                      <div class="mb-2">
+                        <%= cluster_info.label :type_algorithm_id, class: "form-label" %>
+                        <%= cluster_info.select :type_algorithm_id, TypeAlgorithm.all.pluck(:name, :id), {prompt:'select'}, {class: "form-select"} %>
+                      </div>
+                    </div>
+                  <% end %>
+
+                   <div class="col-sm-12 col-12">
+                    <div class="field mb-2">
+                      <%= form.button :submit, class:"btn btn-primary w-50", tabindex:"4" do %>
+                      <%=  I18n.t('views.save')%>
+                      <% end %>
+                    </div>
+                  </div>
+              <% end %>
+            </div>
+          </div>
+        </div>
+      </div>
+  </div>
+</div>

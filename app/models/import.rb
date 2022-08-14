@@ -22,6 +22,8 @@
 #
 class Import < ApplicationRecord
   belongs_to :user
+  has_one :cluster_info
+  accepts_nested_attributes_for :cluster_info, update_only: true
 
   validates :status, :name, presence: true
 
@@ -37,4 +39,5 @@ class Import < ApplicationRecord
   def human_status
     Import.human_enum_name(:status, self.status) if self.status
   end
+
 end

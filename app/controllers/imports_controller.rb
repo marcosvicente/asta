@@ -3,7 +3,7 @@ class ImportsController < ApplicationController
 
   # GET /imports or /imports.json
   def index
-    @imports = Import.order("created_at DESC").where(arquived: false).page(params[:page]).per(10)
+    @imports = Import.order("created_at DESC").where(archived: false).page(params[:page]).per(10)
   end
 
   # GET /imports/1 or /imports/1.json
@@ -51,12 +51,12 @@ class ImportsController < ApplicationController
     end
   end
 
-  def arquived
+  def archived
     unless params[:id].nil?
       import = Import.find(params[:id])
-      import.arquived = true
+      import.archived = true
       import.save
-      redirect_to import, notice: "Importação foi arquivada."
+      redirect_to import, notice: "Importation archived"
     else
       render :edit, status: :unprocessable_entity
     end

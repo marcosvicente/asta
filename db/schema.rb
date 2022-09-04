@@ -68,7 +68,7 @@ ActiveRecord::Schema.define(version: 2022_08_03_211313) do
     t.text "message"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
-    t.boolean "arquived", default: false
+    t.boolean "archived", default: false
     t.index ["user_id"], name: "index_imports_on_user_id"
   end
 

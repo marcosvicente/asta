@@ -8,4 +8,5 @@
 #  updated_at :datetime         not null
 #
 class TypeAlgorithm < ApplicationRecord
+  validates_presence_of :name
 end

@@ -1,3 +1,23 @@
 .pagination-block{
   margin: auto;
 }
+
+.banner{
+  padding: 40px;
+  font-family: Montserrat,Helvetica,Arial,serif;
+  p{
+    text-align: justify; 
+    font-size: 16px;
+    a{
+      color: #6E6B7B;
+      text-decoration: underline !important;
+    }
+  }
+  .row{
+    margin-bottom: 20px;
+  }
+  img{
+    width:180px;
+    height:auto;
+  }
+}

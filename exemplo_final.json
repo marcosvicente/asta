@@ -1,0 +1,401 @@
+{
+  "colluns": {
+    "cx": "t-SNE-x",
+    "cy": "t-SNE-y",
+    "r": "Silhouette",
+    "cluster": "Cluster",
+    "data_id": "Kefera, Paulo"
+  },
+  "values": [
+    {
+      "cx": 3.04479,
+      "cy": 1.31892,
+      "r": 0.516616,
+      "cluster": "C1",
+      "data_id": 1,
+      "info": [
+        {
+          "column": "Content",
+          "value": "A estreia de “É FODA” aqui em SP foi S U R R E A L! melhor plateia que já tive até hoje em cena… Queria agradecer à todos que fizeram parte desse dia histórico na minha vida, 21/08/2022 https://t.co/OalG3V9m4X"
+        } 
+      ]
+    },
+    {
+      "cx": -4.14813,
+      "cy": 1.57302,
+      "r": 0.617766,
+      "cluster": "C4",
+      "data_id": 2,
+      "info": [
+        {
+          "column": "Content",
+          "value": "oieeeee"
+        }
+      ]
+    },
+    {
+      "cx": -2.06014,
+      "cy": -2.05091,
+      "r": 0.440471,
+      "cluster": "C1",
+      "data_id": 3,
+      "info": [
+          {
+              "column": "Content",
+              "value": "PRIMEIRA CIDADE DA TURNÊ: RIO DE JANEIRO! - INGRESSOS 🎟 https://t.co/ygZ3OHoOYR https://t.co/POdy0J56cd"
+        } 
+      ]
+    },
+    {
+      "cx": -4.50087,
+      "cy": 0.207227,
+      "r": 0.612843,
+      "cluster": "C4",
+      "data_id": 4,
+      "info": [
+        {
+          "column": "Content",
+          "value": "seleninha, tu é? https://t.co/tSsQLD7VVe"
+        }
+      ]
+    },
+    {
+      "cx": 2.58441,
+      "cy": -2.36204,
+      "r": 0.498079,
+      "cluster": "C1",
+      "data_id": 5,
+      "info": [
+        {
+          "column": "Content",
+          "value": "hoje é lua minguante ou cheia? eu tô confuser"
+        }
+      ]
+    },
+    {
+      "cx": 3.1837,
+      "cy": -3.15593,
+      "r": 0.542816,
+      "cluster": "C1",
+      "data_id": 6,
+      "info": [
+        {
+          "column": "Content",
+          "value": "que lua tamo hoje?"
+        } 
+      ]
+    },
+    {
+      "cx": 1.90321,
+      "cy": 4.27931,
+      "r": 0.490017,
+      "cluster": "C3",
+      "data_id": 7,
+      "info": [
+        {
+          "column": "Content",
+          "value": "RT @lacerda: momentos https://t.co/8pqtIZF0Bz"
+        }
+      ]
+    },
+    {
+      "cx": 1.88135,
+      "cy": 4.23047,
+      "r": 0.571668,
+      "cluster": "C3",
+      "data_id": 8,
+      "info": [
+        {
+          "column": "Content",
+          "value": "RT @meltedvideos: https://t.co/TxgGRQKH0d"
+        }
+      ]
+    },
+    {
+      "cx": -3.09445,
+      "cy": 2.32332,
+      "r": 0.612363,
+      "cluster": "C4",
+      "data_id": 9,
+      "info": [
+        {
+          "column": "Content",
+          "value": "ansiosa 😮"
+        } 
+      ]
+    },
+    {
+      "cx": -3.48793,
+      "cy": 0.718519,
+      "r": 0.630207,
+      "cluster": "C4",
+      "data_id": 10,
+      "info": [
+        {
+          "column": "Content",
+          "value": "@buchmannbiia 😍😍😍❤️"
+        } 
+      ]
+    },
+    {
+      "cx": 3.72288,
+      "cy": -1.07765,
+      "r": 0.508607,
+      "cluster": "C1",
+      "data_id": 11,
+      "info": [
+        {
+          "column": "Content",
+          "value": "o que que vcs postam nos close friends? e quem vcs colocam lá? 👀"
+        }
+      ]
+    },
+    {
+      "cx": -2.96869,
+      "cy": -0.805759,
+      "r": 0.601312,
+      "cluster": "C4",
+      "data_id": 12,
+      "info": [
+        {
+          "column": "Content",
+          "value": "me colocou nos close friends: 🥰😍😍🥰🥰🥰🥰😍🥰😛😛😛 só posta fumando pendrive: 😩😩😡😡😡🫤🫤🫤🥱🥱🥴🥴🥴🥴"
+        }
+      ]
+    },
+    {
+      "cx": 1.93953,
+      "cy": -0.463611,
+      "r": 0.489474,
+      "cluster": "C1",
+      "data_id": 13,
+      "info": [
+        {
+          "column": "Content",
+          "value": "os ensaios tão rolando super bem, a peça tá ficando linda!"
+        }
+      ]
+    },
+    {
+      "cx": -0.390629,
+      "cy": -3.6975,
+      "r": 0.507329,
+      "cluster": "C1",
+      "data_id": 14,
+      "info": [
+        {
+          "column": "Content",
+          "value": "meu deus, somos duas https://t.co/CPXYBuFHq4"
+        }
+      ]
+    },
+    {
+      "cx": 4.14743,
+      "cy": 1.53979,
+      "r": 0.5,
+      "cluster": "C2",
+      "data_id": 15,
+      "info": [
+        {
+          "column": "Content",
+          "value": "r a n d o m"
+        }
+      ]
+    },
+    {
+      "cx": -0.7637,
+      "cy": -1.22077,
+      "r": 0.572368,
+      "cluster": "C4",
+      "data_id": 16,
+      "info": [
+        {
+          "column": "Content",
+          "value": "@marcoscastro hmmmm... me serve um pouco de cada por favor, daí respondo."
+        } 
+      ]
+    },
+    {
+      "cx": -0.838753,
+      "cy": -0.0301405,
+      "r": 0.591174,
+      "cluster": "C4",
+      "data_id": 17,
+      "info": [
+        {
+          "column": "Content",
+          "value": "Amanhã, o cabra que fica balançando na bicicletinha espera voces as 7am. Aproximadamente… Bjo proceis e boa noitchi 😘 @ Hotel Lutetia Paris https://t.co/rmMjtGDJrT"
+        } 
+      ]
+    },
+    {
+      "cx": -2.2906,
+      "cy": 0.129408,
+      "r": 0.622163,
+      "cluster": "C4",
+      "data_id": 18,
+      "info": [
+        {
+          "column": "Content",
+          "value": "Acompanharam a live de ontem com belmiro, jonato e charles?"
+        } 
+      ]
+    },
+    {
+      "cx": 0.305876,
+      "cy": 1.49377,
+      "r": 0.5527,
+      "cluster": "C4",
+      "data_id": 19,
+      "info": [
+        {
+            "column": "Content",
+            "value": "me ajudem a subir a # de hoje por favor: #forçaRodrigo para completo entendimento, assistam o banha de hoje 9.08.2022"
+        } 
+      ]
+    },
+    {
+      "cx": 0.918984,
+      "cy": -1.3655,
+      "r": 0.470563,
+      "cluster": "C1",
+      "data_id": 20,
+      "info": [
+        {
+          "column": "Content",
+          "value": "Passando na sua feed rapidinho pra te confessar que se eu não treinasse “perna” essa foto não existiria. Se você fica escolhendo muito o angulo da foto, não é a câmera que é ruim… Ó… 👀👀👀 https://t.co/AaihLUvEbw"
+        } 
+      ]
+    },
+    {
+      "cx": -1.17798,
+      "cy": -0.42716,
+      "r": 0.596537,
+      "cluster": "C4",
+      "data_id": 21,
+      "info": [
+        {
+          "column": "Content",
+          "value": "@_Elmerson Luciene, Emerson está precisando de abraço, aperto de mao e a salada de fruta inteira: sirva com gosto que o menino merece."
+        } 
+      ]
+    },
+    {
+      "cx": 2.59502,
+      "cy": 2.28743,
+      "r": 0.509129,
+      "cluster": "C3",
+      "data_id": 22,
+      "info": [
+        {
+          "column": "Content",
+          "value": "@BrunoObroxa Oi?"
+        } 
+      ]
+    },
+    {
+      "cx": -1.27133,
+      "cy": 1.3481,
+      "r": 0.593078,
+      "cluster": "C4",
+      "data_id": 23,
+      "info": [
+        {
+          "column": "Content",
+          "value": "@maiatfpn paciencia, lealdade e bom humor"
+        } 
+      ]
+    },
+    {
+      "cx": 0.305339,
+      "cy": -0.492584,
+      "r": 0.442906,
+      "cluster": "C1",
+      "data_id": 24,
+      "info": [
+        {
+          "column": "Content",
+          "value": "bora banha? entrando em 5min pelo insta, youtube e tik tok - é onde respondo as perguntas de voces. bjao bom dia!"
+        }
+      ]
+    },
+    {
+      "cx": -2.79515,
+      "cy": 0.928124,
+      "r": 0.628033,
+      "cluster": "C4",
+      "data_id": 25,
+      "info": [
+        {
+          "column": "Content",
+          "value": "@loser__manos @lucasdglacerda Parabens por favor!"
+        }
+      ]
+    },
+    {
+      "cx": -2.14146,
+      "cy": 0.682717,
+      "r": 0.627593,
+      "cluster": "C4",
+      "data_id": 26,
+      "info": [
+        {
+          "column": "Content",
+          "value": "@prof_leonidas perfeito. pegou o esquema"
+        } 
+      ]
+    },
+    {
+      "cx": 1.19804,
+      "cy": -3.02734,
+      "r": 0.512081,
+      "cluster": "C1",
+      "data_id": 27,
+      "info": [
+        {
+          "column": "Content",
+          "value": "@Paulohenkel_ sim, pois nao 😎"
+        } 
+      ]
+    },
+    {
+      "cx": 1.38373,
+      "cy": -1.1821,
+      "r": 0.486679,
+      "cluster": "C1",
+      "data_id": 28,
+      "info": [
+        {
+          "column": "Content",
+          "value": "@valmirsolda nao vou só de sacanagem. vou mandar voce ir treinar e fazer dieta porque banha nao faz aniversario seu animal. deixa de ser carente e vai botar um musculo nessa carcaça."
+        }
+      ]
+    },
+    {
+      "cx": 2.46516,
+      "cy": 0.246879,
+      "r": 0.50797,
+      "cluster": "C1",
+      "data_id": 29,
+      "info": [
+        {
+          "column": "Content",
+          "value": "@josecairo10 @vliopard @ManuellaSouza__ entao vc ta atrasado..."
+        }  
+      ]
+    },
+    {
+      "cx": 0.350354,
+      "cy": -1.948,
+      "r": 0.465679,
+      "cluster": "C1",
+      "data_id": 30,
+      "info": [
+        {
+          "column": "Content",
+          "value": "@Straube22 boa noite de trabalho e nao durma em serviço..."
+        } 
+      ]
+    }
+  ]
+}

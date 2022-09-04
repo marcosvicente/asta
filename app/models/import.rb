@@ -3,7 +3,7 @@
 # Table name: imports
 #
 #  id         :bigint           not null, primary key
-#  arquived   :boolean          default(FALSE)
+#  archived   :boolean          default(FALSE)
 #  file       :string
 #  message    :text
 #  name       :string

@@ -12,8 +12,9 @@ Rails.application.routes.draw do
     resources :users
   end
   resources :imports
-  get 'imports/:id/arquived', to: 'imports#arquived'
+  get 'imports/:id/archived', to: 'imports#archived'
 
   root to: "home#index"
+  get 'download_exemple_file', to: "home#download_exemple_file"
   resources :messages, only: %i[ create ]
 end

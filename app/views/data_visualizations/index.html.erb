@@ -19,7 +19,7 @@
         </thead>
         <tbody>
           <% @data_visualizations.each do |data_visualization| %>
-            <% unless Import.find(data_visualization.import_id).arquived === true %>
+            <% unless Import.find(data_visualization.import_id).archived === true %>
               <tr>
                 <td><%= Import.find(data_visualization.import_id).name %></td>
 

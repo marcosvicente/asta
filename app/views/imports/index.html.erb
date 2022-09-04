@@ -49,7 +49,7 @@
                <% if current_user.kind == "admin" || import.user_id == current_user.id %>
                 <td><%= link_to I18n.t('views.edit'), edit_import_path(import) %></td>
               
-                <td><%= link_to I18n.t('views.destroy'), controller: "imports", action: "arquived", id: import%></td>
+                <td><%= link_to I18n.t('views.destroy'), controller: "imports", action: "archived", id: import%></td>
               <% end %>
             </tr>
           <% end %>

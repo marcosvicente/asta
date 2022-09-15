@@ -77,7 +77,7 @@ en:
   views:  
     all: All
     new: New
-    edit: Editar
+    edit: Edit
     show: Show
     destroy: Delete
     back: Back

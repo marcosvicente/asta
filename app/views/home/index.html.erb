@@ -61,6 +61,8 @@
 
 <!--/ Statistics Card -->
 
+<% unless I18n.locale == :en %>
+<!-- PT-->
 <div class="banner card">
   <div class="row">
     <div class="col-3">
@@ -81,3 +83,26 @@
     </div>
   </div>
 </div>
+<!-- PT-->
+<% else %>
+<div class="banner card">
+  <div class="row">
+    <div class="col-3">
+      <%= image_tag('bubble-graph.png', alt: 'https://www.flaticon.com/free-icons/bubble-graph - Bubble graph icons created by Muhammad_Usman ') %>
+    </div>
+     <div class="col-9">
+      <p>Owning a wide range of possibilities to work with the data generated through mining, and exclusively using the unsupervised machine learning method, the Asta system emerges to assist in the visualization of grouping solutions. </p>
+      <p>When entering the data in json format <%= link_to "according to the example in this link", download_exemple_file_path %> we bring to you and your company the data in the bubble chart format in a simple and intuitive way.</p>
+    </div>
+  </div>
+  <div class="row">
+     <div class="col-9">
+      <p>Furthermore, still thinking about security and the easy understanding of the data generated not only by analysts but also by lay users, Asta makes it possible for the administrator to create the users who will have access to the generated charts.</p>
+      <p>And lastly, thinking about insights and doubts that users may have when visualising these charts, Asta allows the insertion of comments for each chart generated, enabling collaborative analysis and thus making it different from all of the existing data visualization systems in the global marketplace.</p>
+    </div>
+    <div class="col-3">
+      <%= image_tag('comments.png', alt: 'https://www.flaticon.com/free-icons/comment - Comment icons created by Freepik - Flaticon') %>
+    </div>
+  </div>
+</div>
+<% end %>

@@ -1,401 +1,2910 @@
 {
-  "colluns": {
-    "cx": "t-SNE-x",
-    "cy": "t-SNE-y",
-    "r": "Silhouette",
-    "cluster": "Cluster",
-    "data_id": "Kefera, Paulo"
+  "colluns":{
+     "cx":"t-SNE-x",
+     "cy":"t-SNE-y",
+     "r":"Silhouette",
+     "cluster":"Cluster",
+     "data_id":"Paises"
   },
-  "values": [
-    {
-      "cx": 3.04479,
-      "cy": 1.31892,
-      "r": 0.516616,
-      "cluster": "C1",
-      "data_id": 1,
-      "info": [
-        {
-          "column": "Content",
-          "value": "A estreia de “É FODA” aqui em SP foi S U R R E A L! melhor plateia que já tive até hoje em cena… Queria agradecer à todos que fizeram parte desse dia histórico na minha vida, 21/08/2022 https://t.co/OalG3V9m4X"
-        } 
-      ]
-    },
-    {
-      "cx": -4.14813,
-      "cy": 1.57302,
-      "r": 0.617766,
-      "cluster": "C4",
-      "data_id": 2,
-      "info": [
-        {
-          "column": "Content",
-          "value": "oieeeee"
-        }
-      ]
-    },
-    {
-      "cx": -2.06014,
-      "cy": -2.05091,
-      "r": 0.440471,
-      "cluster": "C1",
-      "data_id": 3,
-      "info": [
-          {
-              "column": "Content",
-              "value": "PRIMEIRA CIDADE DA TURNÊ: RIO DE JANEIRO! - INGRESSOS 🎟 https://t.co/ygZ3OHoOYR https://t.co/POdy0J56cd"
-        } 
-      ]
-    },
-    {
-      "cx": -4.50087,
-      "cy": 0.207227,
-      "r": 0.612843,
-      "cluster": "C4",
-      "data_id": 4,
-      "info": [
-        {
-          "column": "Content",
-          "value": "seleninha, tu é? https://t.co/tSsQLD7VVe"
-        }
-      ]
-    },
-    {
-      "cx": 2.58441,
-      "cy": -2.36204,
-      "r": 0.498079,
-      "cluster": "C1",
-      "data_id": 5,
-      "info": [
-        {
-          "column": "Content",
-          "value": "hoje é lua minguante ou cheia? eu tô confuser"
-        }
-      ]
-    },
-    {
-      "cx": 3.1837,
-      "cy": -3.15593,
-      "r": 0.542816,
-      "cluster": "C1",
-      "data_id": 6,
-      "info": [
-        {
-          "column": "Content",
-          "value": "que lua tamo hoje?"
-        } 
-      ]
-    },
-    {
-      "cx": 1.90321,
-      "cy": 4.27931,
-      "r": 0.490017,
-      "cluster": "C3",
-      "data_id": 7,
-      "info": [
-        {
-          "column": "Content",
-          "value": "RT @lacerda: momentos https://t.co/8pqtIZF0Bz"
-        }
-      ]
-    },
-    {
-      "cx": 1.88135,
-      "cy": 4.23047,
-      "r": 0.571668,
-      "cluster": "C3",
-      "data_id": 8,
-      "info": [
-        {
-          "column": "Content",
-          "value": "RT @meltedvideos: https://t.co/TxgGRQKH0d"
-        }
-      ]
-    },
-    {
-      "cx": -3.09445,
-      "cy": 2.32332,
-      "r": 0.612363,
-      "cluster": "C4",
-      "data_id": 9,
-      "info": [
-        {
-          "column": "Content",
-          "value": "ansiosa 😮"
-        } 
-      ]
-    },
-    {
-      "cx": -3.48793,
-      "cy": 0.718519,
-      "r": 0.630207,
-      "cluster": "C4",
-      "data_id": 10,
-      "info": [
-        {
-          "column": "Content",
-          "value": "@buchmannbiia 😍😍😍❤️"
-        } 
-      ]
-    },
-    {
-      "cx": 3.72288,
-      "cy": -1.07765,
-      "r": 0.508607,
-      "cluster": "C1",
-      "data_id": 11,
-      "info": [
-        {
-          "column": "Content",
-          "value": "o que que vcs postam nos close friends? e quem vcs colocam lá? 👀"
-        }
-      ]
-    },
-    {
-      "cx": -2.96869,
-      "cy": -0.805759,
-      "r": 0.601312,
-      "cluster": "C4",
-      "data_id": 12,
-      "info": [
-        {
-          "column": "Content",
-          "value": "me colocou nos close friends: 🥰😍😍🥰🥰🥰🥰😍🥰😛😛😛 só posta fumando pendrive: 😩😩😡😡😡🫤🫤🫤🥱🥱🥴🥴🥴🥴"
-        }
-      ]
-    },
-    {
-      "cx": 1.93953,
-      "cy": -0.463611,
-      "r": 0.489474,
-      "cluster": "C1",
-      "data_id": 13,
-      "info": [
-        {
-          "column": "Content",
-          "value": "os ensaios tão rolando super bem, a peça tá ficando linda!"
-        }
-      ]
-    },
-    {
-      "cx": -0.390629,
-      "cy": -3.6975,
-      "r": 0.507329,
-      "cluster": "C1",
-      "data_id": 14,
-      "info": [
-        {
-          "column": "Content",
-          "value": "meu deus, somos duas https://t.co/CPXYBuFHq4"
-        }
-      ]
-    },
-    {
-      "cx": 4.14743,
-      "cy": 1.53979,
-      "r": 0.5,
-      "cluster": "C2",
-      "data_id": 15,
-      "info": [
-        {
-          "column": "Content",
-          "value": "r a n d o m"
-        }
-      ]
-    },
-    {
-      "cx": -0.7637,
-      "cy": -1.22077,
-      "r": 0.572368,
-      "cluster": "C4",
-      "data_id": 16,
-      "info": [
-        {
-          "column": "Content",
-          "value": "@marcoscastro hmmmm... me serve um pouco de cada por favor, daí respondo."
-        } 
-      ]
-    },
-    {
-      "cx": -0.838753,
-      "cy": -0.0301405,
-      "r": 0.591174,
-      "cluster": "C4",
-      "data_id": 17,
-      "info": [
-        {
-          "column": "Content",
-          "value": "Amanhã, o cabra que fica balançando na bicicletinha espera voces as 7am. Aproximadamente… Bjo proceis e boa noitchi 😘 @ Hotel Lutetia Paris https://t.co/rmMjtGDJrT"
-        } 
-      ]
-    },
-    {
-      "cx": -2.2906,
-      "cy": 0.129408,
-      "r": 0.622163,
-      "cluster": "C4",
-      "data_id": 18,
-      "info": [
-        {
-          "column": "Content",
-          "value": "Acompanharam a live de ontem com belmiro, jonato e charles?"
-        } 
-      ]
-    },
-    {
-      "cx": 0.305876,
-      "cy": 1.49377,
-      "r": 0.5527,
-      "cluster": "C4",
-      "data_id": 19,
-      "info": [
-        {
-            "column": "Content",
-            "value": "me ajudem a subir a # de hoje por favor: #forçaRodrigo para completo entendimento, assistam o banha de hoje 9.08.2022"
-        } 
-      ]
-    },
-    {
-      "cx": 0.918984,
-      "cy": -1.3655,
-      "r": 0.470563,
-      "cluster": "C1",
-      "data_id": 20,
-      "info": [
-        {
-          "column": "Content",
-          "value": "Passando na sua feed rapidinho pra te confessar que se eu não treinasse “perna” essa foto não existiria. Se você fica escolhendo muito o angulo da foto, não é a câmera que é ruim… Ó… 👀👀👀 https://t.co/AaihLUvEbw"
-        } 
-      ]
-    },
-    {
-      "cx": -1.17798,
-      "cy": -0.42716,
-      "r": 0.596537,
-      "cluster": "C4",
-      "data_id": 21,
-      "info": [
-        {
-          "column": "Content",
-          "value": "@_Elmerson Luciene, Emerson está precisando de abraço, aperto de mao e a salada de fruta inteira: sirva com gosto que o menino merece."
-        } 
-      ]
-    },
-    {
-      "cx": 2.59502,
-      "cy": 2.28743,
-      "r": 0.509129,
-      "cluster": "C3",
-      "data_id": 22,
-      "info": [
-        {
-          "column": "Content",
-          "value": "@BrunoObroxa Oi?"
-        } 
-      ]
-    },
-    {
-      "cx": -1.27133,
-      "cy": 1.3481,
-      "r": 0.593078,
-      "cluster": "C4",
-      "data_id": 23,
-      "info": [
-        {
-          "column": "Content",
-          "value": "@maiatfpn paciencia, lealdade e bom humor"
-        } 
-      ]
-    },
-    {
-      "cx": 0.305339,
-      "cy": -0.492584,
-      "r": 0.442906,
-      "cluster": "C1",
-      "data_id": 24,
-      "info": [
-        {
-          "column": "Content",
-          "value": "bora banha? entrando em 5min pelo insta, youtube e tik tok - é onde respondo as perguntas de voces. bjao bom dia!"
-        }
-      ]
-    },
-    {
-      "cx": -2.79515,
-      "cy": 0.928124,
-      "r": 0.628033,
-      "cluster": "C4",
-      "data_id": 25,
-      "info": [
-        {
-          "column": "Content",
-          "value": "@loser__manos @lucasdglacerda Parabens por favor!"
-        }
-      ]
-    },
-    {
-      "cx": -2.14146,
-      "cy": 0.682717,
-      "r": 0.627593,
-      "cluster": "C4",
-      "data_id": 26,
-      "info": [
-        {
-          "column": "Content",
-          "value": "@prof_leonidas perfeito. pegou o esquema"
-        } 
-      ]
-    },
-    {
-      "cx": 1.19804,
-      "cy": -3.02734,
-      "r": 0.512081,
-      "cluster": "C1",
-      "data_id": 27,
-      "info": [
-        {
-          "column": "Content",
-          "value": "@Paulohenkel_ sim, pois nao 😎"
-        } 
-      ]
-    },
-    {
-      "cx": 1.38373,
-      "cy": -1.1821,
-      "r": 0.486679,
-      "cluster": "C1",
-      "data_id": 28,
-      "info": [
-        {
-          "column": "Content",
-          "value": "@valmirsolda nao vou só de sacanagem. vou mandar voce ir treinar e fazer dieta porque banha nao faz aniversario seu animal. deixa de ser carente e vai botar um musculo nessa carcaça."
-        }
-      ]
-    },
-    {
-      "cx": 2.46516,
-      "cy": 0.246879,
-      "r": 0.50797,
-      "cluster": "C1",
-      "data_id": 29,
-      "info": [
-        {
-          "column": "Content",
-          "value": "@josecairo10 @vliopard @ManuellaSouza__ entao vc ta atrasado..."
-        }  
-      ]
-    },
-    {
-      "cx": 0.350354,
-      "cy": -1.948,
-      "r": 0.465679,
-      "cluster": "C1",
-      "data_id": 30,
-      "info": [
-        {
-          "column": "Content",
-          "value": "@Straube22 boa noite de trabalho e nao durma em serviço..."
-        } 
-      ]
-    }
+  "values":[
+     {
+         "cx":29,
+         "cy":78.5,
+         "r":11800,
+         "cluster":"Europe",
+         "data_id":0,
+         "info":[
+             {
+                 "column":"Content",
+                 "value":"Albania"
+             }
+         ]
+     },
+     {
+         "cx":35.3,
+         "cy":77,
+         "r":15000,
+         "cluster":"North Africa",
+         "data_id":1,
+         "info":[
+             {
+                 "column":"Content",
+                 "value":"Algeria"
+             }
+         ]
+     },
+     {
+         "cx":35.3,
+         "cy":73.4,
+         "r":13000,
+         "cluster":"Oceania",
+         "data_id":2,
+         "info":[
+             {
+                 "column":"Content",
+                 "value":"American Samoa"
+             }
+         ]
+     },
+     {
+         "cx":35.3,
+         "cy":82.9,
+         "r":49900,
+         "cluster":"Europe",
+         "data_id":3,
+         "info":[
+             {
+                 "column":"Content",
+                 "value":"Andorra"
+             }
+         ]
+     },
+     {
+         "cx":35.3,
+         "cy":60.2,
+         "r":6800,
+         "cluster":"Sub-Saharan Africa",
+         "data_id":4,
+         "info":[
+             {
+                 "column":"Content",
+                 "value":"Angola"
+             }
+         ]
+     },
+     {
+         "cx":35.3,
+         "cy":81.5,
+         "r":12200,
+         "cluster":"Caribbean Islands",
+         "data_id":5,
+         "info":[
+             {
+                 "column":"Content",
+                 "value":"Anguilla"
+             }
+         ]
+     },
+     {
+         "cx":35.3,
+         "cy":76.7,
+         "r":25200,
+         "cluster":"Caribbean Islands",
+         "data_id":6,
+         "info":[
+             {
+                 "column":"Content",
+                 "value":"Antigua and Barbuda"
+             }
+         ]
+     },
+     {
+         "cx":42.7,
+         "cy":77.3,
+         "r":20000,
+         "cluster":"South America",
+         "data_id":7,
+         "info":[
+             {
+                 "column":"Content",
+                 "value":"Argentina"
+             }
+         ]
+     },
+     {
+         "cx":31.5,
+         "cy":74.9,
+         "r":8600,
+         "cluster":"West & Central Asia",
+         "data_id":8,
+         "info":[
+             {
+                 "column":"Content",
+                 "value":"Armenia"
+             }
+         ]
+     },
+     {
+         "cx":31.5,
+         "cy":76.9,
+         "r":25300,
+         "cluster":"Caribbean Islands",
+         "data_id":9,
+         "info":[
+             {
+                 "column":"Content",
+                 "value":"Aruba"
+             }
+         ]
+     },
+     {
+         "cx":30.3,
+         "cy":82.3,
+         "r":48900,
+         "cluster":"Oceania",
+         "data_id":10,
+         "info":[
+             {
+                 "column":"Content",
+                 "value":"Australia"
+             }
+         ]
+     },
+     {
+         "cx":29.2,
+         "cy":81.6,
+         "r":48000,
+         "cluster":"Europe",
+         "data_id":11,
+         "info":[
+             {
+                 "column":"Content",
+                 "value":"Austria"
+             }
+         ]
+     },
+     {
+         "cx":33.7,
+         "cy":72.8,
+         "r":17400,
+         "cluster":"West & Central Asia",
+         "data_id":12,
+         "info":[
+             {
+                 "column":"Content",
+                 "value":"Azerbaijan"
+             }
+         ]
+     },
+     {
+         "cx":33.7,
+         "cy":72.6,
+         "r":24600,
+         "cluster":"Caribbean Islands",
+         "data_id":13,
+         "info":[
+             {
+                 "column":"Content",
+                 "value":"Bahamas, The"
+             }
+         ]
+     },
+     {
+         "cx":33.7,
+         "cy":79,
+         "r":50700,
+         "cluster":"West & Central Asia",
+         "data_id":14,
+         "info":[
+             {
+                 "column":"Content",
+                 "value":"Bahrain"
+             }
+         ]
+     },
+     {
+         "cx":32.1,
+         "cy":73.4,
+         "r":3900,
+         "cluster":"South & South East Asia",
+         "data_id":15,
+         "info":[
+             {
+                 "column":"Content",
+                 "value":"Bangladesh"
+             }
+         ]
+     },
+     {
+         "cx":32.1,
+         "cy":75.5,
+         "r":17100,
+         "cluster":"Caribbean Islands",
+         "data_id":16,
+         "info":[
+             {
+                 "column":"Content",
+                 "value":"Barbados"
+             }
+         ]
+     },
+     {
+         "cx":26.5,
+         "cy":73,
+         "r":18000,
+         "cluster":"North Asia",
+         "data_id":17,
+         "info":[
+             {
+                 "column":"Content",
+                 "value":"Belarus"
+             }
+         ]
+     },
+     {
+         "cx":25.9,
+         "cy":81.1,
+         "r":45000,
+         "cluster":"Europe",
+         "data_id":18,
+         "info":[
+             {
+                 "column":"Content",
+                 "value":"Belgium"
+             }
+         ]
+     },
+     {
+         "cx":25.9,
+         "cy":68.9,
+         "r":8200,
+         "cluster":"Mesoamerica",
+         "data_id":19,
+         "info":[
+             {
+                 "column":"Content",
+                 "value":"Belize"
+             }
+         ]
+     },
+     {
+         "cx":36.5,
+         "cy":62.3,
+         "r":2100,
+         "cluster":"Sub-Saharan Africa",
+         "data_id":20,
+         "info":[
+             {
+                 "column":"Content",
+                 "value":"Benin"
+             }
+         ]
+     },
+     {
+         "cx":36.5,
+         "cy":81.4,
+         "r":85700,
+         "cluster":"Caribbean Islands",
+         "data_id":21,
+         "info":[
+             {
+                 "column":"Content",
+                 "value":"Bermuda"
+             }
+         ]
+     },
+     {
+         "cx":38.8,
+         "cy":70.6,
+         "r":8200,
+         "cluster":"South & South East Asia",
+         "data_id":22,
+         "info":[
+             {
+                 "column":"Content",
+                 "value":"Bhutan"
+             }
+         ]
+     },
+     {
+         "cx":47,
+         "cy":69.5,
+         "r":7200,
+         "cluster":"South America",
+         "data_id":23,
+         "info":[
+             {
+                 "column":"Content",
+                 "value":"Bolivia"
+             }
+         ]
+     },
+     {
+         "cx":36.2,
+         "cy":76.9,
+         "r":11000,
+         "cluster":"Europe",
+         "data_id":24,
+         "info":[
+             {
+                 "column":"Content",
+                 "value":"Bosnia and Herzegovina"
+             }
+         ]
+     },
+     {
+         "cx":60.5,
+         "cy":63.3,
+         "r":17000,
+         "cluster":"Sub-Saharan Africa",
+         "data_id":25,
+         "info":[
+             {
+                 "column":"Content",
+                 "value":"Botswana"
+             }
+         ]
+     },
+     {
+         "cx":49.7,
+         "cy":74,
+         "r":15200,
+         "cluster":"South America",
+         "data_id":26,
+         "info":[
+             {
+                 "column":"Content",
+                 "value":"Brazil"
+             }
+         ]
+     },
+     {
+         "cx":49.7,
+         "cy":78.8,
+         "r":42300,
+         "cluster":"South & South East Asia",
+         "data_id":27,
+         "info":[
+             {
+                 "column":"Content",
+                 "value":"British Virgin Islands"
+             }
+         ]
+     },
+     {
+         "cx":49.7,
+         "cy":77.3,
+         "r":76900,
+         "cluster":"South & South East Asia",
+         "data_id":28,
+         "info":[
+             {
+                 "column":"Content",
+                 "value":"Brunei"
+             }
+         ]
+     },
+     {
+         "cx":37,
+         "cy":74.7,
+         "r":20300,
+         "cluster":"Europe",
+         "data_id":29,
+         "info":[
+             {
+                 "column":"Content",
+                 "value":"Bulgaria"
+             }
+         ]
+     },
+     {
+         "cx":39.5,
+         "cy":55.9,
+         "r":1800,
+         "cluster":"Sub-Saharan Africa",
+         "data_id":30,
+         "info":[
+             {
+                 "column":"Content",
+                 "value":"Burkina Faso"
+             }
+         ]
+     },
+     {
+         "cx":39.5,
+         "cy":68.2,
+         "r":5800,
+         "cluster":"South & South East Asia",
+         "data_id":31,
+         "info":[
+             {
+                 "column":"Content",
+                 "value":"Burma"
+             }
+         ]
+     },
+     {
+         "cx":42.4,
+         "cy":60.9,
+         "r":800,
+         "cluster":"Sub-Saharan Africa",
+         "data_id":32,
+         "info":[
+             {
+                 "column":"Content",
+                 "value":"Burundi"
+             }
+         ]
+     },
+     {
+         "cx":42.4,
+         "cy":72.4,
+         "r":6700,
+         "cluster":"Sub-Saharan Africa",
+         "data_id":33,
+         "info":[
+             {
+                 "column":"Content",
+                 "value":"Cabo Verde"
+             }
+         ]
+     },
+     {
+         "cx":37.9,
+         "cy":64.9,
+         "r":3700,
+         "cluster":"South & South East Asia",
+         "data_id":34,
+         "info":[
+             {
+                 "column":"Content",
+                 "value":"Cambodia"
+             }
+         ]
+     },
+     {
+         "cx":44.6,
+         "cy":59,
+         "r":3200,
+         "cluster":"Sub-Saharan Africa",
+         "data_id":35,
+         "info":[
+             {
+                 "column":"Content",
+                 "value":"Cameroon"
+             }
+         ]
+     },
+     {
+         "cx":32.1,
+         "cy":81.9,
+         "r":46400,
+         "cluster":"North America",
+         "data_id":36,
+         "info":[
+             {
+                 "column":"Content",
+                 "value":"Canada"
+             }
+         ]
+     },
+     {
+         "cx":32.1,
+         "cy":81.3,
+         "r":43800,
+         "cluster":"Caribbean Islands",
+         "data_id":37,
+         "info":[
+             {
+                 "column":"Content",
+                 "value":"Cayman Islands"
+             }
+         ]
+     },
+     {
+         "cx":61.3,
+         "cy":52.8,
+         "r":700,
+         "cluster":"Sub-Saharan Africa",
+         "data_id":38,
+         "info":[
+             {
+                 "column":"Content",
+                 "value":"Central African Republic"
+             }
+         ]
+     },
+     {
+         "cx":43.3,
+         "cy":50.6,
+         "r":2400,
+         "cluster":"Sub-Saharan Africa",
+         "data_id":39,
+         "info":[
+             {
+                 "column":"Content",
+                 "value":"Chad"
+             }
+         ]
+     },
+     {
+         "cx":50.5,
+         "cy":78.9,
+         "r":24100,
+         "cluster":"South America",
+         "data_id":40,
+         "info":[
+             {
+                 "column":"Content",
+                 "value":"Chile"
+             }
+         ]
+     },
+     {
+         "cx":46.5,
+         "cy":75.7,
+         "r":15400,
+         "cluster":"East Asia",
+         "data_id":41,
+         "info":[
+             {
+                 "column":"Content",
+                 "value":"China"
+             }
+         ]
+     },
+     {
+         "cx":53.5,
+         "cy":75.9,
+         "r":14100,
+         "cluster":"South America",
+         "data_id":42,
+         "info":[
+             {
+                 "column":"Content",
+                 "value":"Colombia"
+             }
+         ]
+     },
+     {
+         "cx":53.5,
+         "cy":64.6,
+         "r":1500,
+         "cluster":"Sub-Saharan Africa",
+         "data_id":43,
+         "info":[
+             {
+                 "column":"Content",
+                 "value":"Comoros"
+             }
+         ]
+     },
+     {
+         "cx":53.5,
+         "cy":57.7,
+         "r":800,
+         "cluster":"Sub-Saharan Africa",
+         "data_id":44,
+         "info":[
+             {
+                 "column":"Content",
+                 "value":"Congo, Democratic Republic of the"
+             }
+         ]
+     },
+     {
+         "cx":53.5,
+         "cy":59.8,
+         "r":6700,
+         "cluster":"Sub-Saharan Africa",
+         "data_id":45,
+         "info":[
+             {
+                 "column":"Content",
+                 "value":"Congo, Republic of the"
+             }
+         ]
+     },
+     {
+         "cx":53.5,
+         "cy":76,
+         "r":12300,
+         "cluster":"Oceania",
+         "data_id":46,
+         "info":[
+             {
+                 "column":"Content",
+                 "value":"Cook Islands"
+             }
+         ]
+     },
+     {
+         "cx":48.5,
+         "cy":78.7,
+         "r":16400,
+         "cluster":"Mesoamerica",
+         "data_id":47,
+         "info":[
+             {
+                 "column":"Content",
+                 "value":"Costa Rica"
+             }
+         ]
+     },
+     {
+         "cx":41.5,
+         "cy":59,
+         "r":3600,
+         "cluster":"Sub-Saharan Africa",
+         "data_id":48,
+         "info":[
+             {
+                 "column":"Content",
+                 "value":"Cote d'Ivoire"
+             }
+         ]
+     },
+     {
+         "cx":32,
+         "cy":76.1,
+         "r":22800,
+         "cluster":"Europe",
+         "data_id":49,
+         "info":[
+             {
+                 "column":"Content",
+                 "value":"Croatia"
+             }
+         ]
+     },
+     {
+         "cx":32,
+         "cy":78.8,
+         "r":11900,
+         "cluster":"Caribbean Islands",
+         "data_id":50,
+         "info":[
+             {
+                 "column":"Content",
+                 "value":"Cuba"
+             }
+         ]
+     },
+     {
+         "cx":32,
+         "cy":78.5,
+         "r":15000,
+         "cluster":"Caribbean Islands",
+         "data_id":51,
+         "info":[
+             {
+                 "column":"Content",
+                 "value":"Curacao"
+             }
+         ]
+     },
+     {
+         "cx":34.8,
+         "cy":78.8,
+         "r":35000,
+         "cluster":"West & Central Asia",
+         "data_id":52,
+         "info":[
+             {
+                 "column":"Content",
+                 "value":"Cyprus"
+             }
+         ]
+     },
+     {
+         "cx":25,
+         "cy":78.8,
+         "r":33200,
+         "cluster":"Europe",
+         "data_id":53,
+         "info":[
+             {
+                 "column":"Content",
+                 "value":"Czechia"
+             }
+         ]
+     },
+     {
+         "cx":28.8,
+         "cy":79.5,
+         "r":48000,
+         "cluster":"Europe",
+         "data_id":54,
+         "info":[
+             {
+                 "column":"Content",
+                 "value":"Denmark"
+             }
+         ]
+     },
+     {
+         "cx":40.9,
+         "cy":63.6,
+         "r":3400,
+         "cluster":"Sub-Saharan Africa",
+         "data_id":55,
+         "info":[
+             {
+                 "column":"Content",
+                 "value":"Djibouti"
+             }
+         ]
+     },
+     {
+         "cx":40.9,
+         "cy":77.2,
+         "r":11300,
+         "cluster":"Caribbean Islands",
+         "data_id":56,
+         "info":[
+             {
+                 "column":"Content",
+                 "value":"Dominica"
+             }
+         ]
+     },
+     {
+         "cx":47.1,
+         "cy":78.3,
+         "r":16000,
+         "cluster":"Caribbean Islands",
+         "data_id":57,
+         "info":[
+             {
+                 "column":"Content",
+                 "value":"Dominican Republic"
+             }
+         ]
+     },
+     {
+         "cx":48.5,
+         "cy":77,
+         "r":11100,
+         "cluster":"South America",
+         "data_id":58,
+         "info":[
+             {
+                 "column":"Content",
+                 "value":"Ecuador"
+             }
+         ]
+     },
+     {
+         "cx":30.8,
+         "cy":73,
+         "r":12600,
+         "cluster":"North Africa",
+         "data_id":59,
+         "info":[
+             {
+                 "column":"Content",
+                 "value":"Egypt"
+             }
+         ]
+     },
+     {
+         "cx":37,
+         "cy":74.9,
+         "r":8900,
+         "cluster":"Mesoamerica",
+         "data_id":60,
+         "info":[
+             {
+                 "column":"Content",
+                 "value":"El Salvador"
+             }
+         ]
+     },
+     {
+         "cx":37,
+         "cy":64.6,
+         "r":38600,
+         "cluster":"Sub-Saharan Africa",
+         "data_id":61,
+         "info":[
+             {
+                 "column":"Content",
+                 "value":"Equatorial Guinea"
+             }
+         ]
+     },
+     {
+         "cx":37,
+         "cy":65.2,
+         "r":1400,
+         "cluster":"Sub-Saharan Africa",
+         "data_id":62,
+         "info":[
+             {
+                 "column":"Content",
+                 "value":"Eritrea"
+             }
+         ]
+     },
+     {
+         "cx":34.8,
+         "cy":76.9,
+         "r":29300,
+         "cluster":"Europe",
+         "data_id":63,
+         "info":[
+             {
+                 "column":"Content",
+                 "value":"Estonia"
+             }
+         ]
+     },
+     {
+         "cx":33,
+         "cy":62.6,
+         "r":1900,
+         "cluster":"Sub-Saharan Africa",
+         "data_id":64,
+         "info":[
+             {
+                 "column":"Content",
+                 "value":"Ethiopia"
+             }
+         ]
+     },
+     {
+         "cx":31,
+         "cy":80.2,
+         "r":39200,
+         "cluster":"South America",
+         "data_id":65,
+         "info":[
+             {
+                 "column":"Content",
+                 "value":"European Union"
+             }
+         ]
+     },
+     {
+         "cx":22.7,
+         "cy":80.5,
+         "r":40000,
+         "cluster":"Europe",
+         "data_id":66,
+         "info":[
+             {
+                 "column":"Content",
+                 "value":"Faroe Islands"
+             }
+         ]
+     },
+     {
+         "cx":22.7,
+         "cy":73,
+         "r":9300,
+         "cluster":"Oceania",
+         "data_id":67,
+         "info":[
+             {
+                 "column":"Content",
+                 "value":"Fiji"
+             }
+         ]
+     },
+     {
+         "cx":21.5,
+         "cy":81,
+         "r":42200,
+         "cluster":"Europe",
+         "data_id":68,
+         "info":[
+             {
+                 "column":"Content",
+                 "value":"Finland"
+             }
+         ]
+     },
+     {
+         "cx":29.2,
+         "cy":81.9,
+         "r":42300,
+         "cluster":"Europe",
+         "data_id":69,
+         "info":[
+             {
+                 "column":"Content",
+                 "value":"France"
+             }
+         ]
+     },
+     {
+         "cx":29.2,
+         "cy":77.4,
+         "r":17000,
+         "cluster":"Oceania",
+         "data_id":70,
+         "info":[
+             {
+                 "column":"Content",
+                 "value":"French Polynesia"
+             }
+         ]
+     },
+     {
+         "cx":29.2,
+         "cy":52.1,
+         "r":19100,
+         "cluster":"Sub-Saharan Africa",
+         "data_id":71,
+         "info":[
+             {
+                 "column":"Content",
+                 "value":"Gabon"
+             }
+         ]
+     },
+     {
+         "cx":50.2,
+         "cy":65.1,
+         "r":1700,
+         "cluster":"Sub-Saharan Africa",
+         "data_id":72,
+         "info":[
+             {
+                 "column":"Content",
+                 "value":"Gambia, The"
+             }
+         ]
+     },
+     {
+         "cx":50.2,
+         "cy":74.2,
+         "r":1700,
+         "cluster":"West & Central Asia",
+         "data_id":73,
+         "info":[
+             {
+                 "column":"Content",
+                 "value":"Gaza Strip"
+             }
+         ]
+     },
+     {
+         "cx":40.1,
+         "cy":76.4,
+         "r":10000,
+         "cluster":"West & Central Asia",
+         "data_id":74,
+         "info":[
+             {
+                 "column":"Content",
+                 "value":"Georgia"
+             }
+         ]
+     },
+     {
+         "cx":27,
+         "cy":80.8,
+         "r":48100,
+         "cluster":"Europe",
+         "data_id":75,
+         "info":[
+             {
+                 "column":"Content",
+                 "value":"Germany"
+             }
+         ]
+     },
+     {
+         "cx":42.3,
+         "cy":67,
+         "r":4400,
+         "cluster":"Sub-Saharan Africa",
+         "data_id":76,
+         "info":[
+             {
+                 "column":"Content",
+                 "value":"Ghana"
+             }
+         ]
+     },
+     {
+         "cx":42.3,
+         "cy":79.6,
+         "r":61700,
+         "cluster":"Europe",
+         "data_id":77,
+         "info":[
+             {
+                 "column":"Content",
+                 "value":"Gibraltar"
+             }
+         ]
+     },
+     {
+         "cx":36.7,
+         "cy":80.7,
+         "r":26700,
+         "cluster":"Europe",
+         "data_id":78,
+         "info":[
+             {
+                 "column":"Content",
+                 "value":"Greece"
+             }
+         ]
+     },
+     {
+         "cx":33.9,
+         "cy":72.6,
+         "r":37600,
+         "cluster":"Europe",
+         "data_id":79,
+         "info":[
+             {
+                 "column":"Content",
+                 "value":"Greenland"
+             }
+         ]
+     },
+     {
+         "cx":33.9,
+         "cy":74.5,
+         "r":14100,
+         "cluster":"Caribbean Islands",
+         "data_id":80,
+         "info":[
+             {
+                 "column":"Content",
+                 "value":"Grenada"
+             }
+         ]
+     },
+     {
+         "cx":33.9,
+         "cy":76,
+         "r":30500,
+         "cluster":"Oceania",
+         "data_id":81,
+         "info":[
+             {
+                 "column":"Content",
+                 "value":"Guam"
+             }
+         ]
+     },
+     {
+         "cx":53,
+         "cy":72.6,
+         "r":7900,
+         "cluster":"Mesoamerica",
+         "data_id":82,
+         "info":[
+             {
+                 "column":"Content",
+                 "value":"Guatemala"
+             }
+         ]
+     },
+     {
+         "cx":53,
+         "cy":82.6,
+         "r":52500,
+         "cluster":"Europe",
+         "data_id":83,
+         "info":[
+             {
+                 "column":"Content",
+                 "value":"Guernsey"
+             }
+         ]
+     },
+     {
+         "cx":39.4,
+         "cy":61,
+         "r":1300,
+         "cluster":"Sub-Saharan Africa",
+         "data_id":84,
+         "info":[
+             {
+                 "column":"Content",
+                 "value":"Guinea"
+             }
+         ]
+     },
+     {
+         "cx":39.4,
+         "cy":51,
+         "r":1700,
+         "cluster":"Sub-Saharan Africa",
+         "data_id":85,
+         "info":[
+             {
+                 "column":"Content",
+                 "value":"Guinea-Bissau"
+             }
+         ]
+     },
+     {
+         "cx":44.6,
+         "cy":68.6,
+         "r":7900,
+         "cluster":"South America",
+         "data_id":86,
+         "info":[
+             {
+                 "column":"Content",
+                 "value":"Guyana"
+             }
+         ]
+     },
+     {
+         "cx":60.8,
+         "cy":64.2,
+         "r":1800,
+         "cluster":"Caribbean Islands",
+         "data_id":87,
+         "info":[
+             {
+                 "column":"Content",
+                 "value":"Haiti"
+             }
+         ]
+     },
+     {
+         "cx":47.1,
+         "cy":71.2,
+         "r":5300,
+         "cluster":"Mesoamerica",
+         "data_id":88,
+         "info":[
+             {
+                 "column":"Content",
+                 "value":"Honduras"
+             }
+         ]
+     },
+     {
+         "cx":53.7,
+         "cy":83,
+         "r":58300,
+         "cluster":"East Asia",
+         "data_id":89,
+         "info":[
+             {
+                 "column":"Content",
+                 "value":"Hong Kong"
+             }
+         ]
+     },
+     {
+         "cx":28.2,
+         "cy":76.1,
+         "r":27500,
+         "cluster":"Europe",
+         "data_id":90,
+         "info":[
+             {
+                 "column":"Content",
+                 "value":"Hungary"
+             }
+         ]
+     },
+     {
+         "cx":28,
+         "cy":83.1,
+         "r":49200,
+         "cluster":"Europe",
+         "data_id":91,
+         "info":[
+             {
+                 "column":"Content",
+                 "value":"Iceland"
+             }
+         ]
+     },
+     {
+         "cx":35.2,
+         "cy":68.8,
+         "r":6600,
+         "cluster":"South & South East Asia",
+         "data_id":92,
+         "info":[
+             {
+                 "column":"Content",
+                 "value":"India"
+             }
+         ]
+     },
+     {
+         "cx":36.8,
+         "cy":73,
+         "r":11700,
+         "cluster":"South & South East Asia",
+         "data_id":93,
+         "info":[
+             {
+                 "column":"Content",
+                 "value":"Indonesia"
+             }
+         ]
+     },
+     {
+         "cx":44.5,
+         "cy":74,
+         "r":18100,
+         "cluster":"West & Central Asia",
+         "data_id":94,
+         "info":[
+             {
+                 "column":"Content",
+                 "value":"Iran"
+             }
+         ]
+     },
+     {
+         "cx":44.5,
+         "cy":74.9,
+         "r":17900,
+         "cluster":"West & Central Asia",
+         "data_id":95,
+         "info":[
+             {
+                 "column":"Content",
+                 "value":"Iraq"
+             }
+         ]
+     },
+     {
+         "cx":31.3,
+         "cy":80.9,
+         "r":69200,
+         "cluster":"Europe",
+         "data_id":96,
+         "info":[
+             {
+                 "column":"Content",
+                 "value":"Ireland"
+             }
+         ]
+     },
+     {
+         "cx":31.3,
+         "cy":81.3,
+         "r":84600,
+         "cluster":"Europe",
+         "data_id":97,
+         "info":[
+             {
+                 "column":"Content",
+                 "value":"Isle of Man"
+             }
+         ]
+     },
+     {
+         "cx":42.8,
+         "cy":82.5,
+         "r":35200,
+         "cluster":"West & Central Asia",
+         "data_id":98,
+         "info":[
+             {
+                 "column":"Content",
+                 "value":"Israel"
+             }
+         ]
+     },
+     {
+         "cx":31.9,
+         "cy":82.3,
+         "r":36800,
+         "cluster":"Europe",
+         "data_id":99,
+         "info":[
+             {
+                 "column":"Content",
+                 "value":"Italy"
+             }
+         ]
+     },
+     {
+         "cx":45.5,
+         "cy":73.7,
+         "r":9000,
+         "cluster":"Caribbean Islands",
+         "data_id":100,
+         "info":[
+             {
+                 "column":"Content",
+                 "value":"Jamaica"
+             }
+         ]
+     },
+     {
+         "cx":37.9,
+         "cy":85.3,
+         "r":41300,
+         "cluster":"East Asia",
+         "data_id":101,
+         "info":[
+             {
+                 "column":"Content",
+                 "value":"Japan"
+             }
+         ]
+     },
+     {
+         "cx":37.9,
+         "cy":81.9,
+         "r":49500,
+         "cluster":"Europe",
+         "data_id":102,
+         "info":[
+             {
+                 "column":"Content",
+                 "value":"Jersey"
+             }
+         ]
+     },
+     {
+         "cx":39.7,
+         "cy":74.8,
+         "r":12300,
+         "cluster":"West & Central Asia",
+         "data_id":103,
+         "info":[
+             {
+                 "column":"Content",
+                 "value":"Jordan"
+             }
+         ]
+     },
+     {
+         "cx":26.3,
+         "cy":71.1,
+         "r":25100,
+         "cluster":"West & Central Asia",
+         "data_id":104,
+         "info":[
+             {
+                 "column":"Content",
+                 "value":"Kazakhstan"
+             }
+         ]
+     },
+     {
+         "cx":42.5,
+         "cy":64.3,
+         "r":3400,
+         "cluster":"Sub-Saharan Africa",
+         "data_id":105,
+         "info":[
+             {
+                 "column":"Content",
+                 "value":"Kenya"
+             }
+         ]
+     },
+     {
+         "cx":42.5,
+         "cy":66.5,
+         "r":1800,
+         "cluster":"Oceania",
+         "data_id":106,
+         "info":[
+             {
+                 "column":"Content",
+                 "value":"Kiribati"
+             }
+         ]
+     },
+     {
+         "cx":42.5,
+         "cy":70.7,
+         "r":1700,
+         "cluster":"East Asia",
+         "data_id":107,
+         "info":[
+             {
+                 "column":"Content",
+                 "value":"Korea, North"
+             }
+         ]
+     },
+     {
+         "cx":34.1,
+         "cy":82.5,
+         "r":37700,
+         "cluster":"East Asia",
+         "data_id":108,
+         "info":[
+             {
+                 "column":"Content",
+                 "value":"Korea, South"
+             }
+         ]
+     },
+     {
+         "cx":30,
+         "cy":78.2,
+         "r":71900,
+         "cluster":"West & Central Asia",
+         "data_id":109,
+         "info":[
+             {
+                 "column":"Content",
+                 "value":"Kuwait"
+             }
+         ]
+     },
+     {
+         "cx":33.4,
+         "cy":70.9,
+         "r":3500,
+         "cluster":"West & Central Asia",
+         "data_id":110,
+         "info":[
+             {
+                 "column":"Content",
+                 "value":"Kyrgyzstan"
+             }
+         ]
+     },
+     {
+         "cx":36.7,
+         "cy":64.6,
+         "r":5700,
+         "cluster":"South & South East Asia",
+         "data_id":111,
+         "info":[
+             {
+                 "column":"Content",
+                 "value":"Laos"
+             }
+         ]
+     },
+     {
+         "cx":34.5,
+         "cy":74.7,
+         "r":25700,
+         "cluster":"Europe",
+         "data_id":112,
+         "info":[
+             {
+                 "column":"Content",
+                 "value":"Latvia"
+             }
+         ]
+     },
+     {
+         "cx":34.5,
+         "cy":77.8,
+         "r":18500,
+         "cluster":"West & Central Asia",
+         "data_id":113,
+         "info":[
+             {
+                 "column":"Content",
+                 "value":"Lebanon"
+             }
+         ]
+     },
+     {
+         "cx":63.2,
+         "cy":53,
+         "r":3600,
+         "cluster":"Sub-Saharan Africa",
+         "data_id":114,
+         "info":[
+             {
+                 "column":"Content",
+                 "value":"Lesotho"
+             }
+         ]
+     },
+     {
+         "cx":32,
+         "cy":63.3,
+         "r":900,
+         "cluster":"Sub-Saharan Africa",
+         "data_id":115,
+         "info":[
+             {
+                 "column":"Content",
+                 "value":"Liberia"
+             }
+         ]
+     },
+     {
+         "cx":32,
+         "cy":76.7,
+         "r":8700,
+         "cluster":"North Africa",
+         "data_id":116,
+         "info":[
+             {
+                 "column":"Content",
+                 "value":"Libya"
+             }
+         ]
+     },
+     {
+         "cx":32,
+         "cy":81.9,
+         "r":139100,
+         "cluster":"Europe",
+         "data_id":117,
+         "info":[
+             {
+                 "column":"Content",
+                 "value":"Liechtenstein"
+             }
+         ]
+     },
+     {
+         "cx":37.9,
+         "cy":75,
+         "r":30000,
+         "cluster":"Europe",
+         "data_id":118,
+         "info":[
+             {
+                 "column":"Content",
+                 "value":"Lithuania"
+             }
+         ]
+     },
+     {
+         "cx":30.4,
+         "cy":82.3,
+         "r":104000,
+         "cluster":"Europe",
+         "data_id":119,
+         "info":[
+             {
+                 "column":"Content",
+                 "value":"Luxembourg"
+             }
+         ]
+     },
+     {
+         "cx":35,
+         "cy":84.6,
+         "r":95100,
+         "cluster":"East Asia",
+         "data_id":120,
+         "info":[
+             {
+                 "column":"Content",
+                 "value":"Macau"
+             }
+         ]
+     },
+     {
+         "cx":33.7,
+         "cy":76.4,
+         "r":14600,
+         "cluster":"Europe",
+         "data_id":121,
+         "info":[
+             {
+                 "column":"Content",
+                 "value":"Macedonia"
+             }
+         ]
+     },
+     {
+         "cx":41,
+         "cy":66.3,
+         "r":1500,
+         "cluster":"Sub-Saharan Africa",
+         "data_id":122,
+         "info":[
+             {
+                 "column":"Content",
+                 "value":"Madagascar"
+             }
+         ]
+     },
+     {
+         "cx":46.1,
+         "cy":61.7,
+         "r":1100,
+         "cluster":"Sub-Saharan Africa",
+         "data_id":123,
+         "info":[
+             {
+                 "column":"Content",
+                 "value":"Malawi"
+             }
+         ]
+     },
+     {
+         "cx":46.2,
+         "cy":75.2,
+         "r":27300,
+         "cluster":"South & South East Asia",
+         "data_id":124,
+         "info":[
+             {
+                 "column":"Content",
+                 "value":"Malaysia"
+             }
+         ]
+     },
+     {
+         "cx":38.4,
+         "cy":75.8,
+         "r":15500,
+         "cluster":"South & South East Asia",
+         "data_id":125,
+         "info":[
+             {
+                 "column":"Content",
+                 "value":"Maldives"
+             }
+         ]
+     },
+     {
+         "cx":40.1,
+         "cy":60.3,
+         "r":2300,
+         "cluster":"Sub-Saharan Africa",
+         "data_id":126,
+         "info":[
+             {
+                 "column":"Content",
+                 "value":"Mali"
+             }
+         ]
+     },
+     {
+         "cx":28.1,
+         "cy":80.5,
+         "r":39900,
+         "cluster":"Europe",
+         "data_id":127,
+         "info":[
+             {
+                 "column":"Content",
+                 "value":"Malta"
+             }
+         ]
+     },
+     {
+         "cx":28.1,
+         "cy":73.4,
+         "r":3300,
+         "cluster":"Oceania",
+         "data_id":128,
+         "info":[
+             {
+                 "column":"Content",
+                 "value":"Marshall Islands"
+             }
+         ]
+     },
+     {
+         "cx":37,
+         "cy":63.4,
+         "r":4300,
+         "cluster":"Sub-Saharan Africa",
+         "data_id":129,
+         "info":[
+             {
+                 "column":"Content",
+                 "value":"Mauritania"
+             }
+         ]
+     },
+     {
+         "cx":35.9,
+         "cy":75.8,
+         "r":20400,
+         "cluster":"Sub-Saharan Africa",
+         "data_id":130,
+         "info":[
+             {
+                 "column":"Content",
+                 "value":"Mauritius"
+             }
+         ]
+     },
+     {
+         "cx":48.2,
+         "cy":76.1,
+         "r":18900,
+         "cluster":"Mesoamerica",
+         "data_id":131,
+         "info":[
+             {
+                 "column":"Content",
+                 "value":"Mexico"
+             }
+         ]
+     },
+     {
+         "cx":61.1,
+         "cy":73.1,
+         "r":3200,
+         "cluster":"Oceania",
+         "data_id":132,
+         "info":[
+             {
+                 "column":"Content",
+                 "value":"Micronesia, Federated States of"
+             }
+         ]
+     },
+     {
+         "cx":26.8,
+         "cy":71,
+         "r":5300,
+         "cluster":"North Asia",
+         "data_id":133,
+         "info":[
+             {
+                 "column":"Content",
+                 "value":"Moldova"
+             }
+         ]
+     },
+     {
+         "cx":26.8,
+         "cy":89.4,
+         "r":115700,
+         "cluster":"Europe",
+         "data_id":134,
+         "info":[
+             {
+                 "column":"Content",
+                 "value":"Monaco"
+             }
+         ]
+     },
+     {
+         "cx":36.5,
+         "cy":69.9,
+         "r":12300,
+         "cluster":"East Asia",
+         "data_id":135,
+         "info":[
+             {
+                 "column":"Content",
+                 "value":"Mongolia"
+             }
+         ]
+     },
+     {
+         "cx":26.2,
+         "cy":74.6,
+         "r":8500,
+         "cluster":"Caribbean Islands",
+         "data_id":136,
+         "info":[
+             {
+                 "column":"Content",
+                 "value":"Montserrat"
+             }
+         ]
+     },
+     {
+         "cx":40.9,
+         "cy":77.1,
+         "r":8300,
+         "cluster":"North Africa",
+         "data_id":137,
+         "info":[
+             {
+                 "column":"Content",
+                 "value":"Morocco"
+             }
+         ]
+     },
+     {
+         "cx":45.6,
+         "cy":53.7,
+         "r":1200,
+         "cluster":"Sub-Saharan Africa",
+         "data_id":138,
+         "info":[
+             {
+                 "column":"Content",
+                 "value":"Mozambique"
+             }
+         ]
+     },
+     {
+         "cx":59.7,
+         "cy":64,
+         "r":11300,
+         "cluster":"Sub-Saharan Africa",
+         "data_id":139,
+         "info":[
+             {
+                 "column":"Content",
+                 "value":"Namibia"
+             }
+         ]
+     },
+     {
+         "cx":59.7,
+         "cy":67.4,
+         "r":11600,
+         "cluster":"Oceania",
+         "data_id":140,
+         "info":[
+             {
+                 "column":"Content",
+                 "value":"Nauru"
+             }
+         ]
+     },
+     {
+         "cx":32.8,
+         "cy":71,
+         "r":2500,
+         "cluster":"South & South East Asia",
+         "data_id":141,
+         "info":[
+             {
+                 "column":"Content",
+                 "value":"Nepal"
+             }
+         ]
+     },
+     {
+         "cx":30.3,
+         "cy":81.4,
+         "r":51000,
+         "cluster":"Europe",
+         "data_id":142,
+         "info":[
+             {
+                 "column":"Content",
+                 "value":"Netherlands"
+             }
+         ]
+     },
+     {
+         "cx":30.3,
+         "cy":77.9,
+         "r":31100,
+         "cluster":"Oceania",
+         "data_id":143,
+         "info":[
+             {
+                 "column":"Content",
+                 "value":"New Caledonia"
+             }
+         ]
+     },
+     {
+         "cx":36.2,
+         "cy":81.3,
+         "r":37300,
+         "cluster":"Oceania",
+         "data_id":144,
+         "info":[
+             {
+                 "column":"Content",
+                 "value":"New Zealand"
+             }
+         ]
+     },
+     {
+         "cx":47.1,
+         "cy":73.5,
+         "r":5500,
+         "cluster":"Mesoamerica",
+         "data_id":145,
+         "info":[
+             {
+                 "column":"Content",
+                 "value":"Nicaragua"
+             }
+         ]
+     },
+     {
+         "cx":34,
+         "cy":55.9,
+         "r":1100,
+         "cluster":"Sub-Saharan Africa",
+         "data_id":146,
+         "info":[
+             {
+                 "column":"Content",
+                 "value":"Niger"
+             }
+         ]
+     },
+     {
+         "cx":48.8,
+         "cy":53.8,
+         "r":5900,
+         "cluster":"Sub-Saharan Africa",
+         "data_id":147,
+         "info":[
+             {
+                 "column":"Content",
+                 "value":"Nigeria"
+             }
+         ]
+     },
+     {
+         "cx":48.8,
+         "cy":75.4,
+         "r":13300,
+         "cluster":"Oceania",
+         "data_id":148,
+         "info":[
+             {
+                 "column":"Content",
+                 "value":"Northern Mariana Islands"
+             }
+         ]
+     },
+     {
+         "cx":26.8,
+         "cy":81.9,
+         "r":69200,
+         "cluster":"Europe",
+         "data_id":149,
+         "info":[
+             {
+                 "column":"Content",
+                 "value":"Norway"
+             }
+         ]
+     },
+     {
+         "cx":26.8,
+         "cy":75.7,
+         "r":46700,
+         "cluster":"West & Central Asia",
+         "data_id":150,
+         "info":[
+             {
+                 "column":"Content",
+                 "value":"Oman"
+             }
+         ]
+     },
+     {
+         "cx":30.7,
+         "cy":68.1,
+         "r":5100,
+         "cluster":"West & Central Asia",
+         "data_id":151,
+         "info":[
+             {
+                 "column":"Content",
+                 "value":"Pakistan"
+             }
+         ]
+     },
+     {
+         "cx":30.7,
+         "cy":73.4,
+         "r":15400,
+         "cluster":"Oceania",
+         "data_id":152,
+         "info":[
+             {
+                 "column":"Content",
+                 "value":"Palau"
+             }
+         ]
+     },
+     {
+         "cx":50.7,
+         "cy":78.8,
+         "r":23000,
+         "cluster":"Mesoamerica",
+         "data_id":153,
+         "info":[
+             {
+                 "column":"Content",
+                 "value":"Panama"
+             }
+         ]
+     },
+     {
+         "cx":50.9,
+         "cy":67.3,
+         "r":3500,
+         "cluster":"Oceania",
+         "data_id":154,
+         "info":[
+             {
+                 "column":"Content",
+                 "value":"Papua New Guinea"
+             }
+         ]
+     },
+     {
+         "cx":51.7,
+         "cy":77.4,
+         "r":9400,
+         "cluster":"South America",
+         "data_id":155,
+         "info":[
+             {
+                 "column":"Content",
+                 "value":"Paraguay"
+             }
+         ]
+     },
+     {
+         "cx":45.3,
+         "cy":74,
+         "r":12900,
+         "cluster":"South America",
+         "data_id":156,
+         "info":[
+             {
+                 "column":"Content",
+                 "value":"Peru"
+             }
+         ]
+     },
+     {
+         "cx":44.4,
+         "cy":69.4,
+         "r":7700,
+         "cluster":"South & South East Asia",
+         "data_id":157,
+         "info":[
+             {
+                 "column":"Content",
+                 "value":"Philippines"
+             }
+         ]
+     },
+     {
+         "cx":30.8,
+         "cy":77.8,
+         "r":27800,
+         "cluster":"Europe",
+         "data_id":158,
+         "info":[
+             {
+                 "column":"Content",
+                 "value":"Poland"
+             }
+         ]
+     },
+     {
+         "cx":33.9,
+         "cy":79.4,
+         "r":28900,
+         "cluster":"Europe",
+         "data_id":159,
+         "info":[
+             {
+                 "column":"Content",
+                 "value":"Portugal"
+             }
+         ]
+     },
+     {
+         "cx":33.9,
+         "cy":80.9,
+         "r":38400,
+         "cluster":"Caribbean Islands",
+         "data_id":160,
+         "info":[
+             {
+                 "column":"Content",
+                 "value":"Puerto Rico"
+             }
+         ]
+     },
+     {
+         "cx":33.9,
+         "cy":78.9,
+         "r":127700,
+         "cluster":"West & Central Asia",
+         "data_id":161,
+         "info":[
+             {
+                 "column":"Content",
+                 "value":"Qatar"
+             }
+         ]
+     },
+     {
+         "cx":27.3,
+         "cy":75.4,
+         "r":22300,
+         "cluster":"Europe",
+         "data_id":162,
+         "info":[
+             {
+                 "column":"Content",
+                 "value":"Romania"
+             }
+         ]
+     },
+     {
+         "cx":41.2,
+         "cy":71,
+         "r":26500,
+         "cluster":"North Asia",
+         "data_id":163,
+         "info":[
+             {
+                 "column":"Content",
+                 "value":"Russia"
+             }
+         ]
+     },
+     {
+         "cx":46.8,
+         "cy":64.3,
+         "r":2000,
+         "cluster":"Sub-Saharan Africa",
+         "data_id":164,
+         "info":[
+             {
+                 "column":"Content",
+                 "value":"Rwanda"
+             }
+         ]
+     },
+     {
+         "cx":46.8,
+         "cy":79.6,
+         "r":7800,
+         "cluster":"Sub-Saharan Africa",
+         "data_id":165,
+         "info":[
+             {
+                 "column":"Content",
+                 "value":"Saint Helena, Ascension, and Tristan da Cunha"
+             }
+         ]
+     },
+     {
+         "cx":46.8,
+         "cy":75.9,
+         "r":26100,
+         "cluster":"Caribbean Islands",
+         "data_id":166,
+         "info":[
+             {
+                 "column":"Content",
+                 "value":"Saint Kitts and Nevis"
+             }
+         ]
+     },
+     {
+         "cx":46.8,
+         "cy":77.9,
+         "r":11800,
+         "cluster":"Caribbean Islands",
+         "data_id":167,
+         "info":[
+             {
+                 "column":"Content",
+                 "value":"Saint Lucia"
+             }
+         ]
+     },
+     {
+         "cx":46.8,
+         "cy":80.6,
+         "r":34900,
+         "cluster":"North America",
+         "data_id":168,
+         "info":[
+             {
+                 "column":"Content",
+                 "value":"Saint Pierre and Miquelon"
+             }
+         ]
+     },
+     {
+         "cx":46.8,
+         "cy":75.5,
+         "r":11300,
+         "cluster":"Caribbean Islands",
+         "data_id":169,
+         "info":[
+             {
+                 "column":"Content",
+                 "value":"Saint Vincent and the Grenadines"
+             }
+         ]
+     },
+     {
+         "cx":46.8,
+         "cy":74,
+         "r":5500,
+         "cluster":"Oceania",
+         "data_id":170,
+         "info":[
+             {
+                 "column":"Content",
+                 "value":"Samoa"
+             }
+         ]
+     },
+     {
+         "cx":46.8,
+         "cy":83.3,
+         "r":59500,
+         "cluster":"Europe",
+         "data_id":171,
+         "info":[
+             {
+                 "column":"Content",
+                 "value":"San Marino"
+             }
+         ]
+     },
+     {
+         "cx":46.8,
+         "cy":65.3,
+         "r":3100,
+         "cluster":"Sub-Saharan Africa",
+         "data_id":172,
+         "info":[
+             {
+                 "column":"Content",
+                 "value":"Sao Tome and Principe"
+             }
+         ]
+     },
+     {
+         "cx":45.9,
+         "cy":75.5,
+         "r":55200,
+         "cluster":"West & Central Asia",
+         "data_id":173,
+         "info":[
+             {
+                 "column":"Content",
+                 "value":"Saudi Arabia"
+             }
+         ]
+     },
+     {
+         "cx":40.3,
+         "cy":62.1,
+         "r":2600,
+         "cluster":"Sub-Saharan Africa",
+         "data_id":174,
+         "info":[
+             {
+                 "column":"Content",
+                 "value":"Senegal"
+             }
+         ]
+     },
+     {
+         "cx":38.7,
+         "cy":75.7,
+         "r":14500,
+         "cluster":"Europe",
+         "data_id":175,
+         "info":[
+             {
+                 "column":"Content",
+                 "value":"Serbia"
+             }
+         ]
+     },
+     {
+         "cx":38.7,
+         "cy":74.9,
+         "r":27600,
+         "cluster":"Sub-Saharan Africa",
+         "data_id":176,
+         "info":[
+             {
+                 "column":"Content",
+                 "value":"Seychelles"
+             }
+         ]
+     },
+     {
+         "cx":34,
+         "cy":58.6,
+         "r":1700,
+         "cluster":"Sub-Saharan Africa",
+         "data_id":177,
+         "info":[
+             {
+                 "column":"Content",
+                 "value":"Sierra Leone"
+             }
+         ]
+     },
+     {
+         "cx":45.8,
+         "cy":85.2,
+         "r":87900,
+         "cluster":"South & South East Asia",
+         "data_id":178,
+         "info":[
+             {
+                 "column":"Content",
+                 "value":"Singapore"
+             }
+         ]
+     },
+     {
+         "cx":45.8,
+         "cy":78.3,
+         "r":66800,
+         "cluster":"Caribbean Islands",
+         "data_id":179,
+         "info":[
+             {
+                 "column":"Content",
+                 "value":"Sint Maarten"
+             }
+         ]
+     },
+     {
+         "cx":23.7,
+         "cy":77.3,
+         "r":31300,
+         "cluster":"Europe",
+         "data_id":180,
+         "info":[
+             {
+                 "column":"Content",
+                 "value":"Slovakia"
+             }
+         ]
+     },
+     {
+         "cx":24.5,
+         "cy":78.3,
+         "r":32100,
+         "cluster":"Europe",
+         "data_id":181,
+         "info":[
+             {
+                 "column":"Content",
+                 "value":"Slovenia"
+             }
+         ]
+     },
+     {
+         "cx":24.5,
+         "cy":75.6,
+         "r":2000,
+         "cluster":"Oceania",
+         "data_id":182,
+         "info":[
+             {
+                 "column":"Content",
+                 "value":"Solomon Islands"
+             }
+         ]
+     },
+     {
+         "cx":24.5,
+         "cy":52.8,
+         "r":400,
+         "cluster":"Sub-Saharan Africa",
+         "data_id":183,
+         "info":[
+             {
+                 "column":"Content",
+                 "value":"Somalia"
+             }
+         ]
+     },
+     {
+         "cx":62.5,
+         "cy":63.8,
+         "r":13200,
+         "cluster":"Sub-Saharan Africa",
+         "data_id":184,
+         "info":[
+             {
+                 "column":"Content",
+                 "value":"South Africa"
+             }
+         ]
+     },
+     {
+         "cx":35.9,
+         "cy":81.8,
+         "r":36400,
+         "cluster":"Europe",
+         "data_id":185,
+         "info":[
+             {
+                 "column":"Content",
+                 "value":"Spain"
+             }
+         ]
+     },
+     {
+         "cx":49,
+         "cy":76.9,
+         "r":12300,
+         "cluster":"South & South East Asia",
+         "data_id":186,
+         "info":[
+             {
+                 "column":"Content",
+                 "value":"Sri Lanka"
+             }
+         ]
+     },
+     {
+         "cx":49,
+         "cy":64.4,
+         "r":4400,
+         "cluster":"Sub-Saharan Africa",
+         "data_id":187,
+         "info":[
+             {
+                 "column":"Content",
+                 "value":"Sudan"
+             }
+         ]
+     },
+     {
+         "cx":49,
+         "cy":72.5,
+         "r":14000,
+         "cluster":"South America",
+         "data_id":188,
+         "info":[
+             {
+                 "column":"Content",
+                 "value":"Suriname"
+             }
+         ]
+     },
+     {
+         "cx":50.4,
+         "cy":52.1,
+         "r":9800,
+         "cluster":"Sub-Saharan Africa",
+         "data_id":189,
+         "info":[
+             {
+                 "column":"Content",
+                 "value":"Swaziland"
+             }
+         ]
+     },
+     {
+         "cx":24.9,
+         "cy":82.1,
+         "r":49800,
+         "cluster":"Europe",
+         "data_id":190,
+         "info":[
+             {
+                 "column":"Content",
+                 "value":"Sweden"
+             }
+         ]
+     },
+     {
+         "cx":29.5,
+         "cy":82.6,
+         "r":59600,
+         "cluster":"Europe",
+         "data_id":191,
+         "info":[
+             {
+                 "column":"Content",
+                 "value":"Switzerland"
+             }
+         ]
+     },
+     {
+         "cx":29.5,
+         "cy":75.1,
+         "r":2900,
+         "cluster":"West & Central Asia",
+         "data_id":192,
+         "info":[
+             {
+                 "column":"Content",
+                 "value":"Syria"
+             }
+         ]
+     },
+     {
+         "cx":33.6,
+         "cy":80.2,
+         "r":48100,
+         "cluster":"East Asia",
+         "data_id":193,
+         "info":[
+             {
+                 "column":"Content",
+                 "value":"Taiwan"
+             }
+         ]
+     },
+     {
+         "cx":32.6,
+         "cy":68.1,
+         "r":3000,
+         "cluster":"West & Central Asia",
+         "data_id":194,
+         "info":[
+             {
+                 "column":"Content",
+                 "value":"Tajikistan"
+             }
+         ]
+     },
+     {
+         "cx":37.6,
+         "cy":62.6,
+         "r":3100,
+         "cluster":"Sub-Saharan Africa",
+         "data_id":195,
+         "info":[
+             {
+                 "column":"Content",
+                 "value":"Tanzania"
+             }
+         ]
+     },
+     {
+         "cx":44.5,
+         "cy":74.9,
+         "r":16900,
+         "cluster":"South & South East Asia",
+         "data_id":196,
+         "info":[
+             {
+                 "column":"Content",
+                 "value":"Thailand"
+             }
+         ]
+     },
+     {
+         "cx":31.9,
+         "cy":68.4,
+         "r":4200,
+         "cluster":"South & South East Asia",
+         "data_id":197,
+         "info":[
+             {
+                 "column":"Content",
+                 "value":"Timor-Leste"
+             }
+         ]
+     },
+     {
+         "cx":46,
+         "cy":65.4,
+         "r":1600,
+         "cluster":"Sub-Saharan Africa",
+         "data_id":198,
+         "info":[
+             {
+                 "column":"Content",
+                 "value":"Togo"
+             }
+         ]
+     },
+     {
+         "cx":46,
+         "cy":76.4,
+         "r":5400,
+         "cluster":"Oceania",
+         "data_id":199,
+         "info":[
+             {
+                 "column":"Content",
+                 "value":"Tonga"
+             }
+         ]
+     },
+     {
+         "cx":46,
+         "cy":73.1,
+         "r":31900,
+         "cluster":"Caribbean Islands",
+         "data_id":200,
+         "info":[
+             {
+                 "column":"Content",
+                 "value":"Trinidad and Tobago"
+             }
+         ]
+     },
+     {
+         "cx":40,
+         "cy":75.7,
+         "r":11600,
+         "cluster":"North Africa",
+         "data_id":201,
+         "info":[
+             {
+                 "column":"Content",
+                 "value":"Tunisia"
+             }
+         ]
+     },
+     {
+         "cx":40.2,
+         "cy":75,
+         "r":24900,
+         "cluster":"West & Central Asia",
+         "data_id":202,
+         "info":[
+             {
+                 "column":"Content",
+                 "value":"Turkey"
+             }
+         ]
+     },
+     {
+         "cx":40.8,
+         "cy":70.4,
+         "r":17500,
+         "cluster":"West & Central Asia",
+         "data_id":203,
+         "info":[
+             {
+                 "column":"Content",
+                 "value":"Turkmenistan"
+             }
+         ]
+     },
+     {
+         "cx":40.8,
+         "cy":80,
+         "r":29100,
+         "cluster":"Caribbean Islands",
+         "data_id":204,
+         "info":[
+             {
+                 "column":"Content",
+                 "value":"Turks and Caicos Islands"
+             }
+         ]
+     },
+     {
+         "cx":40.8,
+         "cy":66.9,
+         "r":3500,
+         "cluster":"Oceania",
+         "data_id":205,
+         "info":[
+             {
+                 "column":"Content",
+                 "value":"Tuvalu"
+             }
+         ]
+     },
+     {
+         "cx":39.5,
+         "cy":55.9,
+         "r":2100,
+         "cluster":"Sub-Saharan Africa",
+         "data_id":206,
+         "info":[
+             {
+                 "column":"Content",
+                 "value":"Uganda"
+             }
+         ]
+     },
+     {
+         "cx":24.6,
+         "cy":72.1,
+         "r":8300,
+         "cluster":"North Asia",
+         "data_id":207,
+         "info":[
+             {
+                 "column":"Content",
+                 "value":"Ukraine"
+             }
+         ]
+     },
+     {
+         "cx":24.6,
+         "cy":77.7,
+         "r":67900,
+         "cluster":"West & Central Asia",
+         "data_id":208,
+         "info":[
+             {
+                 "column":"Content",
+                 "value":"United Arab Emirates"
+             }
+         ]
+     },
+     {
+         "cx":32.4,
+         "cy":80.8,
+         "r":42500,
+         "cluster":"Europe",
+         "data_id":209,
+         "info":[
+             {
+                 "column":"Content",
+                 "value":"United Kingdom"
+             }
+         ]
+     },
+     {
+         "cx":45,
+         "cy":80,
+         "r":57400,
+         "cluster":"North America",
+         "data_id":210,
+         "info":[
+             {
+                 "column":"Content",
+                 "value":"United States"
+             }
+         ]
+     },
+     {
+         "cx":41.6,
+         "cy":77.4,
+         "r":21500,
+         "cluster":"South America",
+         "data_id":211,
+         "info":[
+             {
+                 "column":"Content",
+                 "value":"Uruguay"
+             }
+         ]
+     },
+     {
+         "cx":36.8,
+         "cy":74,
+         "r":6600,
+         "cluster":"West & Central Asia",
+         "data_id":212,
+         "info":[
+             {
+                 "column":"Content",
+                 "value":"Uzbekistan"
+             }
+         ]
+     },
+     {
+         "cx":36.8,
+         "cy":73.7,
+         "r":2600,
+         "cluster":"Oceania",
+         "data_id":213,
+         "info":[
+             {
+                 "column":"Content",
+                 "value":"Vanuatu"
+             }
+         ]
+     },
+     {
+         "cx":39,
+         "cy":76,
+         "r":13800,
+         "cluster":"South America",
+         "data_id":214,
+         "info":[
+             {
+                 "column":"Content",
+                 "value":"Venezuela"
+             }
+         ]
+     },
+     {
+         "cx":37.6,
+         "cy":73.7,
+         "r":6400,
+         "cluster":"South & South East Asia",
+         "data_id":215,
+         "info":[
+             {
+                 "column":"Content",
+                 "value":"Vietnam"
+             }
+         ]
+     },
+     {
+         "cx":37.6,
+         "cy":79.4,
+         "r":36100,
+         "cluster":"Caribbean Islands",
+         "data_id":216,
+         "info":[
+             {
+                 "column":"Content",
+                 "value":"Virgin Islands"
+             }
+         ]
+     },
+     {
+         "cx":37.6,
+         "cy":79.8,
+         "r":3800,
+         "cluster":"Oceania",
+         "data_id":217,
+         "info":[
+             {
+                 "column":"Content",
+                 "value":"Wallis and Futuna"
+             }
+         ]
+     },
+     {
+         "cx":34.5,
+         "cy":75.2,
+         "r":4300,
+         "cluster":"West & Central Asia",
+         "data_id":218,
+         "info":[
+             {
+                 "column":"Content",
+                 "value":"West Bank"
+             }
+         ]
+     },
+     {
+         "cx":34.5,
+         "cy":63.4,
+         "r":2500,
+         "cluster":"North Africa",
+         "data_id":219,
+         "info":[
+             {
+                 "column":"Content",
+                 "value":"Western Sahara"
+             }
+         ]
+     },
+     {
+         "cx":37.9,
+         "cy":65.9,
+         "r":2400,
+         "cluster":"West & Central Asia",
+         "data_id":220,
+         "info":[
+             {
+                 "column":"Content",
+                 "value":"Yemen"
+             }
+         ]
+     },
+     {
+         "cx":57.5,
+         "cy":52.7,
+         "r":3900,
+         "cluster":"Sub-Saharan Africa",
+         "data_id":221,
+         "info":[
+             {
+                 "column":"Content",
+                 "value":"Zambia"
+             }
+         ]
+     },
+     {
+         "cx":50.1,
+         "cy":60.4,
+         "r":2000,
+         "cluster":"Sub-Saharan Africa",
+         "data_id":222,
+         "info":[
+             {
+                 "column":"Content",
+                 "value":"Zimbabwe"
+             }
+         ]
+     }
   ]
 }

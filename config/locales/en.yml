@@ -90,7 +90,7 @@ en:
     home:
       statistic: Statistics
     import: 
-      lasted: Lasted Importation
+      lasted: Latest Importations
       not: No Importation
     pagination:
       first: "&laquo; First"

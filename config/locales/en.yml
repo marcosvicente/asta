@@ -120,3 +120,7 @@ en:
       work:
         update: User was successfully updated.
         new: Usuário was create.
+
+    import:
+      new: 
+        info: Download the example file in json format

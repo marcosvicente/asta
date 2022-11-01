@@ -122,3 +122,7 @@ pt-BR:
       error:
         updated:  error prohibited this user from being saved
         new:  error prohibited this user from being saved
+
+    import:
+      new: 
+        info: Baixe o arquivo de exemplo no formato json

@@ -2,7 +2,8 @@
   <div class="col-md-6">
     <div class="card">
       <div class="card-body">
-        <p class="text-center mt-2">Baixe o arquivo de exemplo no formato json - <%= link_to "Exemplo", download_exemple_file_path %></p>
+        <p class="text-center mt-2">
+        <%= link_to I18n.t('controller.import.new.info') %> - <%= link_to "Exemple", download_exemple_file_path %></p>
         <%= render 'form_create', import: @import %>
       </div>
     </div>
